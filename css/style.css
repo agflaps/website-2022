@@ -13,7 +13,7 @@
   margin-top: 10px; }
   @media only screen and (max-width: 600px) {
     #logo {
-      margin-left: 25px; } }
+      margin-left: 2px; } }
 
 .menu-header {
   display: inline-flex; 
@@ -57,7 +57,8 @@
   padding: 20px;}
     @media only screen and (max-width: 600px) {
       .banner-info h1 {
-        font-size: 2.5rem; } }
+        font-size: 2.5rem;
+      margin-top: -20px; } }
   .banner-info #orcamento{
     background: #c60aff linear-gradient(to right, #c60aff, #ff7b00);
     border-radius: 25px 25px 0px 25px;
@@ -76,9 +77,9 @@
   flex-wrap: wrap; }
   @media only screen and (max-width: 600px) {
     .full-banner {
-      height: 60vh;
-      background: #36014a;
-      background: linear-gradient(90deg, #36014a 0%, #581aa2 35%, #a200ff 100%); }
+      height: 61vh;
+      background: #b600ce;
+      background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%); }
       .full-banner img {
         display: none; } }
   .full-banner img {
@@ -203,22 +204,19 @@
 
 .about {
   background: #ff4f73;
-  background: linear-gradient(90deg, #ff4f73 0%, rgba(255, 156, 126, 0.868785) 50%, rgba(252, 170, 69, 0.804359) 100%);
+  background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
   padding: 50px;
   border-radius: 70px;
   flex-wrap: wrap;
   justify-content: space-around;
   display: flex;
   align-items: center; }
-  @media only screen and (max-width: 600px) {
-    .about img {
-      display: none; } }
-
-  .about img {
+  
+  .about  #animation-about {
   float: right;
 }
 .about button {
-  background: #ba04df linear-gradient(to right, #6303bd, #c804e2);
+  background: #6c4fa1 linear-gradient(to right, #a751f8, #d364c0);
   color: #fff;
   width: 10rem;
   padding: 10px;
@@ -229,7 +227,10 @@ cursor: pointer;}
 
     @media only screen and (max-width: 600px) {
       .about .about-right img {
-        display: none; } }
+        display: none; }
+        .about button {
+          margin-left: 20px;
+        } }
 
 .legal {
   background-color: #3d3d3d;
@@ -237,7 +238,7 @@ cursor: pointer;}
   .legal p {
     text-align: center;
     color: #fff;
-    font-size: 17px; }
+    font-size: 16px; }
 
 
     
