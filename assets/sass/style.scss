@@ -1,0 +1,143 @@
+@import  'global.scss';
+
+.full-banner{
+  width: 100%;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 600px) {
+      img{
+          display: none;
+      }
+    &.full-banner{
+      height: 61vh;
+      background: $primary-color;
+      background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%); }}
+}
+
+.banner-info{
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  button{
+    @include primary-button
+  }
+  
+  h1{
+    margin-left: -15px;
+    font-size: 4rem;
+    color: $wite;
+    font-weight: 300; 
+    padding: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    &.banner-info{
+      top: 15%; }
+      h1{
+      font-size: 2.5rem;
+      margin-top: -20px;  
+      }}
+
+}
+
+  .container-servicos {
+    margin-top: -6%;
+    padding: 0px 0px 50px;
+    text-align: center;
+    justify-content: center;
+    
+ }
+ .grid-card-servies {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+  
+
+ .card-servico {
+    box-shadow: 0 0.4rem 1rem #c5c5c5;
+    margin-top: 10%;
+    padding: 18px;
+    width: 340px;
+    margin: 15px;
+    background-color: $wite;
+    border-radius: 15px;
+    text-align: left;
+    transition: all 0.3s;
+    p{
+        padding: 0px 1px 1px 15px;
+        font-weight: 400;
+        text-align: left; 
+        color: $grey
+        }
+    
+    button{
+        @include secondary-button();
+    }
+    &:hover{
+        transition: all 0.3s;
+        margin-top: -0.2%;
+    }
+    
+ @media only screen and (max-width: 600px) {
+
+     &.card-servico img{
+      width: 310px; }
+
+      button {
+        width: 19rem;
+      }
+    
+    }
+   }
+
+   
+.container-about {
+    padding: 20px;
+    justify-content: center;
+
+    p, h1{
+        text-align: left;
+        color: $wite;
+    }
+   }
+
+   .about {
+    background: #ff4f73;
+    background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
+    padding: 50px;
+    border-radius: 70px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    align-items: center; 
+    
+    #animation-about {
+        float: right;
+    }
+
+    button{
+        @include tertiary-button;   
+    }
+    @media only screen and (max-width: 600px) {
+        .about .about-right img {
+          display: none;
+         }
+          .about button {
+            margin-left: 20px;
+          } }
+}
+
+  
+.legal {
+ background: rgb(181,84,255);
+background: linear-gradient(274deg, rgba(181,84,255,1) 0%, rgba(149,51,255,1) 46%, rgba(114,43,255,1) 85%);
+    padding: 20px; }
+   p {
+      text-align: center;
+      color: $wite;
+
+      font-size: 16px; }
+  

@@ -1,0 +1,64 @@
+@mixin primary-button {
+    background: $orange linear-gradient(to right, $orange, $yellow);
+    width: 12rem;
+    height: 45px;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    font-family: $font-paragrapy;
+    color:$background-color;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover{
+        background: $orange linear-gradient(to left, $orange, $yellow);
+        color: $background-color;
+        transition: ease-in-out 0.2s;
+        border: none;
+        box-shadow: 0 2px 5px #d8642e;
+
+    }
+}
+
+@mixin secondary-button{
+    width: 21rem;
+    padding: 10px;
+    border-radius: 30px;
+    border: #d794fd 1px solid;
+    font-family: $font-buttons;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #9d0aff;
+    background-color: rgb(255, 255, 255);  
+    
+&:hover{
+    background: #ba04df linear-gradient(to right, #791fcc, #db7ae7);
+    color: $background-color;
+    transition: all 0.4s;
+    border: none;
+    box-shadow: 0 2px 2px #862ed8;
+    }
+
+    
+}
+
+
+@mixin tertiary-button{
+    border:solid 2px $background-color;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center;
+    width: 9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $wite;
+    font-size: 1.1rem;
+    cursor: pointer;
+
+    &:hover{
+        background:$background-color;
+        color: $primary-color;
+        transition: ease-in-out 0.2s
+        }
+}
