@@ -94,6 +94,13 @@ header .menu-header ul, header .menu-header a {
   }
 }
 
+.mouse-scroll {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -12%;
+}
+
 .banner-info {
   position: absolute;
   top: 15%;
@@ -137,7 +144,7 @@ header .menu-header ul, header .menu-header a {
 }
 
 .container-servicos {
-  margin-top: -6%;
+  margin-top: 5%;
   padding: 0px 0px 50px;
   text-align: center;
   justify-content: center;

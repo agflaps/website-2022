@@ -4,6 +4,7 @@
   width: 100%;
   flex-wrap: wrap;
 
+
   @media only screen and (max-width: 600px) {
       img{
           display: none;
@@ -12,6 +13,13 @@
       height: 61vh;
       background: $primary-color;
       background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%); }}
+
+}
+.mouse-scroll{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: -12%;
 }
 
 .banner-info{
@@ -21,7 +29,7 @@
   button{
     @include primary-button
   }
-  
+
   h1{
     margin-left: -15px;
     font-size: 4rem;
@@ -41,14 +49,13 @@
 }
 
   .container-servicos {
-    margin-top: -6%;
+    margin-top: 5%;
     padding: 0px 0px 50px;
     text-align: center;
     justify-content: center;
     
  }
  .grid-card-servies {
-
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
