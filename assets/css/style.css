@@ -59,6 +59,12 @@ header #logo {
 header img {
   margin-left: 70px;
 }
+@media screen and (max-width: 600px) {
+  header #logo {
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+}
 header .menu-header {
   display: inline-flex;
   justify-content: space-between;
@@ -79,26 +85,45 @@ header .menu-header ul, header .menu-header a {
   color: #f7f7f7;
 }
 
+#whatsapp-button {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  #whatsapp-button {
+    display: inline;
+    position: fixed;
+    top: 75%;
+    right: 2.5%;
+    padding: 10px;
+    z-index: 10000000;
+  }
+}
+
 .full-banner {
   width: 100%;
   flex-wrap: wrap;
 }
-@media only screen and (max-width: 600px) {
-  .full-banner img {
-    display: none;
-  }
-  .full-banner.full-banner {
-    height: 61vh;
-    background: #7513d1;
-    background: linear-gradient(90deg, #280068 0%, #581aa2 35%, #a200ff 100%);
-  }
-}
-
-.mouse-scroll {
+.full-banner .mouse-scroll {
   align-items: center;
   justify-content: center;
   display: flex;
   margin-top: -12%;
+}
+@media only screen and (max-width: 600px) {
+  .full-banner #orcamento {
+    display: none;
+  }
+  .full-banner img {
+    display: none;
+  }
+  .full-banner.full-banner {
+    height: 65vh;
+    background: #7513d1;
+    background: linear-gradient(90deg, #280068 0%, #581aa2 35%, #a200ff 100%);
+  }
+  .full-banner .mouse-scroll {
+    display: none;
+  }
 }
 
 .banner-info {
@@ -138,7 +163,7 @@ header .menu-header ul, header .menu-header a {
     top: 15%;
   }
   .banner-info h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: -20px;
   }
 }
@@ -148,21 +173,28 @@ header .menu-header ul, header .menu-header a {
   padding: 0px 0px 50px;
   text-align: center;
   justify-content: center;
-}
-
-.grid-card-servies {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   width: 100%;
 }
 
+.grid-card-services {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+.grid-card-services .container {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-servico {
-  box-shadow: 0 0.4rem 1rem #c5c5c5;
+  box-shadow: 1px 0.4rem 5px #dbdbdb;
   margin-top: 10%;
   padding: 18px;
-  width: 340px;
-  margin: 15px;
+  margin: 5px;
+  width: 350px;
   background-color: #fff;
   border-radius: 15px;
   text-align: left;
@@ -175,7 +207,7 @@ header .menu-header ul, header .menu-header a {
   color: #7c7979;
 }
 .card-servico button {
-  width: 21rem;
+  width: 22rem;
   padding: 10px;
   border-radius: 30px;
   border: #d794fd 1px solid;
@@ -197,12 +229,29 @@ header .menu-header ul, header .menu-header a {
   transition: all 0.3s;
   margin-top: -0.2%;
 }
+.card-servico .model {
+  height: 250px;
+  max-height: 100%;
+  max-width: 100%;
+}
 @media only screen and (max-width: 600px) {
   .card-servico.card-servico img {
     width: 310px;
   }
   .card-servico button {
     width: 19rem;
+  }
+  .card-servico p {
+    font-size: 16px;
+    width: 280px;
+  }
+  .card-servico.card-servico {
+    margin-left: 1px;
+    width: 90%;
+    height: 500px;
+  }
+  .card-servico .model {
+    height: 250px;
   }
 }
 
@@ -219,6 +268,7 @@ header .menu-header ul, header .menu-header a {
   background: #ff4f73;
   background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
   padding: 50px;
+  margin-top: -2%;
   border-radius: 70px;
   flex-wrap: wrap;
   justify-content: space-around;
