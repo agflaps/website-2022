@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css"/>
-    <script src="./scripts/app.js"></script>
+    <script src="./scripts/ajax.js"></script>
     <script src="//code.jivosite.com/widget/HMnUt2mdMp" async></script>
     <!--Jquery-->
     <script type="text/javascript" src="scripts/JQuery3.3.1.js"></script>
@@ -18,26 +18,26 @@
 </head>
 <body>
 
-    <header> 
+    <header class="header-home">
         <a href="https://newflaps.com"> <img id="logo" src="assets/images/logo.png" height="57px" width="120px"></a>
         <ul class="menu-header">
             <li><a href="#about"><h3>Sobre</h3></a></li>
             <li><a href="#services"><h3>Serviços</h3></a></li>
             <li><a href="#"><h3>Blog</h3></a></li>
-            <li ><a  href="#"><h3 id="circle-wite">Contato</h3></a></li>
+            <li ><a href="/layouts/contact.html"><h3 id="circle-wite">Contato</h3></a></li>
             
         </ul>
     </header>
         </div>
         <div id="whatsapp-button">
-            <a href="https://api.whatsapp.com/send?phone=5511977269286&text=Olá, gostaria de fazer um orçamento!" target="_blank"><img  class="whatsapp" src="https://www.carrerahomevr.com/assets/img/scenery/whatsapp.png" height="60px" /></a>
+            <a href="https://api.whatsapp.com/send?phone=5511977269286&text=Olá, gostaria de fazer um orçamento!" target="_blank"><img  class="whatsapp" src="/assets/images/whatsapp.png" height="62px" /></a>
         </div>
 
         <div class="full-banner">
             <img src="assets/images/banner-agency.svg" alt="">
         <div class="banner-info">
             <h1>Abra novas abas <br> para o seu <br>negócio hoje</h1>
-            <a id="orcamento" onclick="window.open('https://web.whatsapp.com/send?phone=5511977269286&text=Ol%C3%A1%2C+gostaria+de+fazer+um+or%C3%A7amento!','page.html','status=no,Width=1080, left=90px, Height=1080');" target="_blank" > <button>Fazer um orçamento</button></a>
+            <a id="orcamento" onclick="window.open('https://web.whatsapp.com/send?phone=5511977269286&text=Ol%C3%A1%2C+gostaria+de+fazer+um+or%C3%A7amento!','page.html','status=no,Width=1080, left=90px, Height=1080');" target="_blank" > <button>Fale conosco</button></a>
        
         </div>
         <div class="mouse-scroll">
@@ -75,8 +75,8 @@
             <a href="#"><button>Mídias Sociais</button></a>
             </div>
             </li>
-    
-    
+
+            
              <li class="item-a">
             <div class="card-servico">
             <img src="assets/images/services/ads.jpg"  class="model">
@@ -90,11 +90,13 @@
             <li class="item-a">
                <div class="card-servico">
                    <img src="assets/images/services/design.jpg"  class="model">
+                   <div class="textservice">
                   <p>Se está pensando em fazer a gestão da sua marca, reformular ou criar uma nova identidade visual envolvendo <strong>imagens</strong>, <strong>slogan</strong> e <strong>logotipo</strong>? Temos a solução perfeita!   </p>
-                  <a href="#"><button>Branding e Design</button></a>
                 </div>
-                  </div>
+                <a href="#"><button>Branding e Design</button></a>
                   </li>
+
+                  
                 </div>
 
 

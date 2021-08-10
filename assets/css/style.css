@@ -15,8 +15,10 @@ h1 {
   color: #7c7979;
 }
 
-h2 {
+h2, label {
   font-family: Quicksand;
+  font-size: 20px;
+  color: #7c7979;
 }
 
 p {
@@ -35,6 +37,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: absolute;
+  margin: 10px 0px 0px;
 }
 header #circle-wite {
   border: solid 2px #f7f7f7;
@@ -43,7 +46,7 @@ header #circle-wite {
   padding: 5px;
   text-align: center;
   width: 9rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Raleway;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
@@ -85,6 +88,14 @@ header .menu-header ul, header .menu-header a {
   color: #f7f7f7;
 }
 
+.header-pages {
+  position: relative;
+  width: 99%;
+  background-color: blueviolet;
+  border-radius: 50px;
+  margin: 10px 5px 0px;
+}
+
 #whatsapp-button {
   display: none;
 }
@@ -99,10 +110,33 @@ header .menu-header ul, header .menu-header a {
   }
 }
 
+textarea {
+  margin: 10px 0px 0px 0px;
+  background-color: #fff;
+  border: solid 2px #e7e7e7;
+  border-radius: 10px;
+  max-width: 97%;
+  max-height: 23%;
+  padding: 10px;
+  font-family: Poppins;
+  font-size: 17px;
+}
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: solid 2px blueviolet;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
 .full-banner {
   width: 100%;
   flex-wrap: wrap;
 }
+
 .full-banner .mouse-scroll {
   align-items: center;
   justify-content: center;
@@ -183,6 +217,7 @@ header .menu-header ul, header .menu-header a {
 }
 .grid-card-services .container {
   width: 100%;
+  margin-top: -10px;
   height: 75vh;
   display: flex;
   justify-content: center;
@@ -190,7 +225,7 @@ header .menu-header ul, header .menu-header a {
 }
 
 .card-servico {
-  box-shadow: 1px 0.4rem 5px #dbdbdb;
+  box-shadow: 3px 0.4rem 5px #e2e2e2;
   margin-top: 10%;
   padding: 18px;
   margin: 5px;
@@ -227,7 +262,7 @@ header .menu-header ul, header .menu-header a {
 }
 .card-servico:hover {
   transition: all 0.3s;
-  margin-top: -0.2%;
+  margin-top: -1%;
 }
 .card-servico .model {
   height: 250px;
@@ -246,12 +281,17 @@ header .menu-header ul, header .menu-header a {
     width: 280px;
   }
   .card-servico.card-servico {
-    margin-left: 1px;
+    margin: -11px;
+    margin-left: -4px;
     width: 90%;
     height: 500px;
   }
   .card-servico .model {
     height: 250px;
+  }
+  .card-servico .container {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
@@ -285,7 +325,7 @@ header .menu-header ul, header .menu-header a {
   padding: 5px;
   text-align: center;
   width: 9rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Raleway;
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
@@ -304,13 +344,189 @@ header .menu-header ul, header .menu-header a {
   }
 }
 
+/*--------------- contact page---------------*/
+.header-pages {
+  position: relative;
+  width: 99%;
+  background-color: blueviolet;
+  border-radius: 50px;
+  margin: 10px 7px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-pages {
+    width: 100%;
+    margin: 0px;
+    margin: 0px;
+  }
+  .header-pages #logo {
+    margin-top: -2%;
+    padding: 10px;
+  }
+}
+
+.contact-container {
+  border-radius: 30px;
+  margin: 20px;
+  width: 96%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+}
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    display: grid;
+    height: 190vh;
+    width: 300px;
+    margin: -11px 10px -7px 0px;
+  }
+  .contact-container .contact-info {
+    display: grid;
+    width: 300px !important;
+  }
+  .contact-container lottie-player {
+    display: none;
+  }
+  .contact-container h3 {
+    display: grid !important;
+  }
+  .contact-container h2 {
+    margin-top: -5%;
+    width: 350px;
+    margin: -10px 0px -10px 0px;
+  }
+}
+.contact-container h1 {
+  color: blueviolet;
+  font-size: 40px;
+}
+.contact-container .contact-info {
+  padding: 20px;
+  text-align: left;
+  width: 50%;
+}
+.contact-container .contact-info h3 {
+  font-family: Poppins;
+  display: inline;
+  color: #ff7b00;
+  border: solid 1px #ff7b00;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 5px 19px 5px;
+}
+.contact-container .contact-info #mapa {
+  background-color: #ff7b00;
+  color: #fff;
+  cursor: pointer;
+}
+.contact-container .contact-info i {
+  margin: 5px;
+}
+.contact-container .contact-info button {
+  background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
+  width: 12rem;
+  height: 45px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-family: Poppins;
+  color: #f7f7f7;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact-container .contact-info button:hover {
+  background: #ff7b00 linear-gradient(to left, #ff7b00, #f5bc00);
+  color: #f7f7f7;
+  transition: ease-in-out 0.2s;
+  border: none;
+  box-shadow: 0 2px 5px #d8642e;
+}
+.contact-container .card-contact {
+  float: right;
+  margin-left: 2%;
+  box-shadow: 0px 0.8rem 10px #e2e2e2;
+  border-radius: 25px;
+  background-color: #fff;
+  height: 600px;
+  width: 550px;
+  padding: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .contact-container .card-contact {
+    float: none;
+    width: 320px;
+    margin-left: -5px;
+    margin-top: -10px !important;
+  }
+}
+.contact-container button {
+  font-size: 20px !important;
+  height: 60px !important;
+  margin: 5px;
+  margin-top: 5%;
+  width: 100% !important;
+  background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
+  width: 12rem;
+  height: 45px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  font-family: Poppins;
+  color: #f7f7f7;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+.contact-container button:hover {
+  background: #ff7b00 linear-gradient(to left, #ff7b00, #f5bc00);
+  color: #f7f7f7;
+  transition: ease-in-out 0.2s;
+  border: none;
+  box-shadow: 0 2px 5px #d8642e;
+}
+.contact-container .contact-fields {
+  margin: 10px 0px 10px 0px;
+  background-color: #fff;
+  border: solid 2px #e9e9e9;
+  border-radius: 10px;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .contact-container .contact-fields {
+    padding: 0px 0px 0px 10px;
+  }
+}
+.contact-container .contact-fields input {
+  font-family: Poppins;
+  font-size: 17px;
+  border: none;
+  padding: 10px;
+  height: 20px;
+  width: 90%;
+  color: #7c7979;
+}
+.contact-container .contact-fields i {
+  color: grey;
+}
+
 .legal {
   background: #b554ff;
   background: linear-gradient(274deg, #b554ff 0%, #9533ff 46%, #722bff 85%);
-  padding: 20px;
+  padding: 0px;
+  width: 100%;
 }
-
-p {
+@media only screen and (max-width: 600px) {
+  .legal {
+    width: 100%;
+  }
+}
+.legal p {
+  padding: 30px;
   text-align: center;
   color: #fff;
   font-size: 16px;

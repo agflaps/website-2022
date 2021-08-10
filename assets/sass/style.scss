@@ -75,6 +75,7 @@
 
     .container{
       width:100%;
+      margin-top: -10px;
       height: 75vh;
       display:flex;
       justify-content: center;
@@ -86,7 +87,7 @@
   
 
  .card-servico {
-    box-shadow: 1px 0.4rem 5px #dbdbdb;
+    box-shadow: 3px 0.4rem 5px #e2e2e2;
     margin-top: 10%;
     padding: 18px;
     margin: 5px;
@@ -107,7 +108,7 @@
     }
     &:hover{
         transition: all 0.3s;
-        margin-top: -0.2%;
+        margin-top: -1%;
     }
     .model{
       height: 250px;
@@ -127,13 +128,17 @@
       width: 280px;
     }
     &.card-servico{
-      margin-left: 1px;
+      margin: -11px;
+      margin-left: -4px;
       width: 90%;
       height: 500px;
     }
     .model{
       height:250px;
     }
+    .container{
+      width:100%;
+      margin-top: 20px;}
     }
    }
 
@@ -175,16 +180,172 @@
           } }
 }
 
+/*--------------- contact page---------------*/
+
+.header-pages{
+  @media only screen and (max-width: 600px){
+    width: 100%;
+    margin:0px;
+    margin: 0px;
+    #logo{
+      margin-top: -2%;
+      padding: 10px;
+    }
+  }
+
+  position: relative;
+  width: 99%;
+  background-color: blueviolet;
+  border-radius: 50px;
+  margin: 10px 7px 0px;
+}
+
+.contact-container{
+  @media only screen and (max-width: 600px) {
+      display: grid;
+      height:190vh;
+      width:300px;
+      margin: -11px 10px -7px 0px;
+      
+    .contact-info{
+      display: grid;
+      width: 300px !important;
+
+    }
+    lottie-player {
+      display: none;
+    }
+    h3{
+      display: grid !important;
+    }
+    h2{
+      margin-top: -5%;
+      width: 350px;
+      margin: -10px -0px -10px 0px;
+    }
+
+  }
+
+  border-radius: 30px;
+  margin: 20px;
+  width:96%;
+  height:100vh;
+  padding: 10px;
+  display: flex;
+
+  h1{
+    color:blueviolet;
+    font-size: 40px;
+  }
+
+  .contact-info{
+    padding: 20px ;
+    text-align: left;
+    width: 50%;
+
+
+    h3{
+      font-family: $font-paragrapy;
+      display: inline;
+      color: $orange;
+      border: solid 1px $orange;
+      border-radius: 25px;
+      font-size: 16px;
+      padding: 5px 19px 5px;
+    }
+    #mapa{
+      background-color: $orange;
+      color: $wite;
+      cursor: pointer;
+    }
+    i{
+      margin: 5px
+    }
+    button{
+      @include primary-button;   
+    }
+
+  }
+
+  .card-contact {
+    @media only screen and (max-width: 600px) { 
+        float: none;
+        width: 320px;
+        margin-left: -5px;
+        margin-top: -10px !important;
+     }
+     
+    float: right;
+    margin-left: 2%;
+    box-shadow: 0px 0.8rem 10px #e2e2e2;
+    border-radius: 25px;
+    background-color: $wite;
+    height: 600px;
+    width: 550px;
+    padding: 40px;
+  }
+    button{
+      font-size: 20px !important ;
+      height: 60px !important;
+      margin: 5px;
+      margin-top: 5%;
+      width: 100% !important;
+      @include primary-button
+    }
+
+    .contact-fields{
+      @media only screen and (max-width: 600px) { 
+        padding:0px 0px 0px 10px;
   
+       }
+      margin:10px 0px 10px 0px;
+      background-color: #fff;
+      border:solid 2px rgb(233, 233, 233);
+      border-radius: 10px;
+      height: 55px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      input {
+        font-family: $font-paragrapy;
+        font-size: 17px;
+        border: none;
+        padding: 10px;
+        height: 20px;
+        width: 90%;
+        color:$grey 
+        
+      }
+      i{
+        color: grey;
+      }
+     }
+
+}
+
+
 .legal {
+  @media only screen and (max-width: 600px) { 
+    width: 100%;
+ }
  background: rgb(181,84,255);
 background: linear-gradient(274deg, rgba(181,84,255,1) 0%, rgba(149,51,255,1) 46%, rgba(114,43,255,1) 85%);
-    padding: 20px; }
-   p {
-      text-align: center;
-      color: $wite;
+    padding: 0px; 
+    width: 100%;
 
-      font-size: 16px; }
+    p {
+      padding: 30px; 
+        text-align: center;
+        color: $wite;
+  
+        font-size: 16px; }
+  }
+  
   
 
 
+
+
+      
