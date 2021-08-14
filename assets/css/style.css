@@ -37,7 +37,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  margin: 10px 0px 0px;
+  margin: 0px;
 }
 header #circle-wite {
   border: solid 2px #f7f7f7;
@@ -90,10 +90,10 @@ header .menu-header ul, header .menu-header a {
 
 .header-pages {
   position: relative;
-  width: 99%;
-  background-color: blueviolet;
-  border-radius: 50px;
-  margin: 10px 5px 0px;
+  width: 100%;
+  background: #54c9ff;
+  background: linear-gradient(274deg, #6f23c5 0%, #6d17bd 46%, #7b1cd3 85%);
+  margin: 0px;
 }
 
 #whatsapp-button {
@@ -136,7 +136,6 @@ input:focus {
   width: 100%;
   flex-wrap: wrap;
 }
-
 .full-banner .mouse-scroll {
   align-items: center;
   justify-content: center;
@@ -345,26 +344,6 @@ input:focus {
 }
 
 /*--------------- contact page---------------*/
-.header-pages {
-  position: relative;
-  width: 99%;
-  background-color: blueviolet;
-  border-radius: 50px;
-  margin: 10px 7px 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  .header-pages {
-    width: 100%;
-    margin: 0px;
-    margin: 0px;
-  }
-  .header-pages #logo {
-    margin-top: -2%;
-    padding: 10px;
-  }
-}
-
 .contact-container {
   border-radius: 30px;
   margin: 20px;
@@ -514,18 +493,17 @@ input:focus {
   color: grey;
 }
 
-.legal {
-  background: #b554ff;
-  background: linear-gradient(274deg, #b554ff 0%, #9533ff 46%, #722bff 85%);
+.footer {
   padding: 0px;
+  background: #452e81;
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
-  .legal {
+  .footer {
     width: 100%;
   }
 }
-.legal p {
+.footer p {
   padding: 30px;
   text-align: center;
   color: #fff;
