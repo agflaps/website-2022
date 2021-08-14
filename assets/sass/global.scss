@@ -96,7 +96,7 @@ display: none;
             @media only screen and (max-width: 600px)  {
             display: inline;
             position: fixed;
-            top: 75%;
+            top: 76%;
             right: 2.5%;
             padding: 10px;
             z-index: 10000000;
@@ -116,7 +116,7 @@ textarea{
     &:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
-    border:solid 2px blueviolet;
+    border:solid 2px $primary-color;
      }
 }
   input:focus {
@@ -125,3 +125,19 @@ textarea{
 
 
 }
+
+.global-footer{
+    @media only screen and (max-width: 600px) { 
+      width: 100%;
+   }
+      padding: 0px;
+      background: rgb(69, 46, 129);
+      width: 100%;
+  
+      p {
+        padding: 30px; 
+          text-align: center;
+          color: $wite;
+    
+          font-size: 16px; }
+    }

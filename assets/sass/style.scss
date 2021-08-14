@@ -118,7 +118,7 @@
  @media only screen and (max-width: 600px) {
 
      &.card-servico img{
-      width: 310px; }
+      width: 330px; }
 
       button {
         width: 19rem;
@@ -128,6 +128,7 @@
       width: 280px;
     }
     &.card-servico{
+      margin-top: 5%;
       margin: -11px;
       margin-left: -4px;
       width: 90%;
@@ -185,7 +186,7 @@
 .contact-container{
   @media only screen and (max-width: 600px) {
       display: grid;
-      height:190vh;
+      height:210vh;
       width:300px;
       margin: -11px 10px -7px 0px;
       
@@ -216,7 +217,7 @@
   display: flex;
 
   h1{
-    color:blueviolet;
+    color:$primary-color;
     font-size: 40px;
   }
 
@@ -252,8 +253,8 @@
   .card-contact {
     @media only screen and (max-width: 600px) { 
         float: none;
-        width: 320px;
-        margin-left: -5px;
+        width: 310px;
+        margin-left: 0px;
         margin-top: -10px !important;
      }
      
@@ -307,21 +308,6 @@
 
 }
 
-.footer{
-  @media only screen and (max-width: 600px) { 
-    width: 100%;
- }
-    padding: 0px;
-    background: rgb(69, 46, 129);
-    width: 100%;
-
-    p {
-      padding: 30px; 
-        text-align: center;
-        color: $wite;
-  
-        font-size: 16px; }
-  }
   
   
 

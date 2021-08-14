@@ -53,7 +53,7 @@ header #circle-wite {
 }
 header #circle-wite:hover {
   background: #f7f7f7;
-  color: #7513d1;
+  color: blueviolet;
   transition: ease-in-out 0.2s;
 }
 header #logo {
@@ -103,7 +103,7 @@ header .menu-header ul, header .menu-header a {
   #whatsapp-button {
     display: inline;
     position: fixed;
-    top: 75%;
+    top: 76%;
     right: 2.5%;
     padding: 10px;
     z-index: 10000000;
@@ -132,6 +132,23 @@ input:focus {
   outline: 0;
 }
 
+.global-footer {
+  padding: 0px;
+  background: #452e81;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .global-footer {
+    width: 100%;
+  }
+}
+.global-footer p {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
 .full-banner {
   width: 100%;
   flex-wrap: wrap;
@@ -151,7 +168,7 @@ input:focus {
   }
   .full-banner.full-banner {
     height: 65vh;
-    background: #7513d1;
+    background: blueviolet;
     background: linear-gradient(90deg, #280068 0%, #581aa2 35%, #a200ff 100%);
   }
   .full-banner .mouse-scroll {
@@ -270,7 +287,7 @@ input:focus {
 }
 @media only screen and (max-width: 600px) {
   .card-servico.card-servico img {
-    width: 310px;
+    width: 330px;
   }
   .card-servico button {
     width: 19rem;
@@ -280,6 +297,7 @@ input:focus {
     width: 280px;
   }
   .card-servico.card-servico {
+    margin-top: 5%;
     margin: -11px;
     margin-left: -4px;
     width: 90%;
@@ -331,7 +349,7 @@ input:focus {
 }
 .about button:hover {
   background: #f7f7f7;
-  color: #7513d1;
+  color: blueviolet;
   transition: ease-in-out 0.2s;
 }
 @media only screen and (max-width: 600px) {
@@ -355,7 +373,7 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .contact-container {
     display: grid;
-    height: 190vh;
+    height: 210vh;
     width: 300px;
     margin: -11px 10px -7px 0px;
   }
@@ -434,8 +452,8 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .contact-container .card-contact {
     float: none;
-    width: 320px;
-    margin-left: -5px;
+    width: 310px;
+    margin-left: 0px;
     margin-top: -10px !important;
   }
 }
@@ -491,23 +509,6 @@ input:focus {
 }
 .contact-container .contact-fields i {
   color: grey;
-}
-
-.footer {
-  padding: 0px;
-  background: #452e81;
-  width: 100%;
-}
-@media only screen and (max-width: 600px) {
-  .footer {
-    width: 100%;
-  }
-}
-.footer p {
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
