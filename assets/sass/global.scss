@@ -41,7 +41,7 @@ header{
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    margin: 10px 0px 0px;
+    margin:0px;
     
     #circle-wite{
         @include tertiary-button();
@@ -85,10 +85,10 @@ header{
 
 .header-pages{
     position: relative;
-    width:99%;
-    background-color: blueviolet;
-    border-radius: 50px;
-    margin: 10px 5px 0px;
+    width:100%;
+    background: rgb(84, 201, 255);
+    background: linear-gradient(274deg, rgb(111, 35, 197) 0%, rgb(109, 23, 189) 46%, rgb(123, 28, 211) 85%);
+    margin: 0px;
     }
 
 #whatsapp-button{
@@ -96,7 +96,7 @@ display: none;
             @media only screen and (max-width: 600px)  {
             display: inline;
             position: fixed;
-            top: 75%;
+            top: 76%;
             right: 2.5%;
             padding: 10px;
             z-index: 10000000;
@@ -116,7 +116,7 @@ textarea{
     &:focus{
     box-shadow: 0 0 0 0;
     outline: 0;
-    border:solid 2px blueviolet;
+    border:solid 2px $primary-color;
      }
 }
   input:focus {
@@ -125,3 +125,19 @@ textarea{
 
 
 }
+
+.global-footer{
+    @media only screen and (max-width: 600px) { 
+      width: 100%;
+   }
+      padding: 0px;
+      background: rgb(69, 46, 129);
+      width: 100%;
+  
+      p {
+        padding: 30px; 
+          text-align: center;
+          color: $wite;
+    
+          font-size: 16px; }
+    }

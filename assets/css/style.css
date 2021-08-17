@@ -37,7 +37,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  margin: 10px 0px 0px;
+  margin: 0px;
 }
 header #circle-wite {
   border: solid 2px #f7f7f7;
@@ -53,7 +53,7 @@ header #circle-wite {
 }
 header #circle-wite:hover {
   background: #f7f7f7;
-  color: #7513d1;
+  color: blueviolet;
   transition: ease-in-out 0.2s;
 }
 header #logo {
@@ -90,10 +90,10 @@ header .menu-header ul, header .menu-header a {
 
 .header-pages {
   position: relative;
-  width: 99%;
-  background-color: blueviolet;
-  border-radius: 50px;
-  margin: 10px 5px 0px;
+  width: 100%;
+  background: #54c9ff;
+  background: linear-gradient(274deg, #6f23c5 0%, #6d17bd 46%, #7b1cd3 85%);
+  margin: 0px;
 }
 
 #whatsapp-button {
@@ -103,7 +103,7 @@ header .menu-header ul, header .menu-header a {
   #whatsapp-button {
     display: inline;
     position: fixed;
-    top: 75%;
+    top: 76%;
     right: 2.5%;
     padding: 10px;
     z-index: 10000000;
@@ -132,11 +132,27 @@ input:focus {
   outline: 0;
 }
 
+.global-footer {
+  padding: 0px;
+  background: #452e81;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .global-footer {
+    width: 100%;
+  }
+}
+.global-footer p {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
 .full-banner {
   width: 100%;
   flex-wrap: wrap;
 }
-
 .full-banner .mouse-scroll {
   align-items: center;
   justify-content: center;
@@ -152,7 +168,7 @@ input:focus {
   }
   .full-banner.full-banner {
     height: 65vh;
-    background: #7513d1;
+    background: blueviolet;
     background: linear-gradient(90deg, #280068 0%, #581aa2 35%, #a200ff 100%);
   }
   .full-banner .mouse-scroll {
@@ -271,7 +287,7 @@ input:focus {
 }
 @media only screen and (max-width: 600px) {
   .card-servico.card-servico img {
-    width: 310px;
+    width: 330px;
   }
   .card-servico button {
     width: 19rem;
@@ -281,6 +297,7 @@ input:focus {
     width: 280px;
   }
   .card-servico.card-servico {
+    margin-top: 5%;
     margin: -11px;
     margin-left: -4px;
     width: 90%;
@@ -332,7 +349,7 @@ input:focus {
 }
 .about button:hover {
   background: #f7f7f7;
-  color: #7513d1;
+  color: blueviolet;
   transition: ease-in-out 0.2s;
 }
 @media only screen and (max-width: 600px) {
@@ -345,26 +362,6 @@ input:focus {
 }
 
 /*--------------- contact page---------------*/
-.header-pages {
-  position: relative;
-  width: 99%;
-  background-color: blueviolet;
-  border-radius: 50px;
-  margin: 10px 7px 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  .header-pages {
-    width: 100%;
-    margin: 0px;
-    margin: 0px;
-  }
-  .header-pages #logo {
-    margin-top: -2%;
-    padding: 10px;
-  }
-}
-
 .contact-container {
   border-radius: 30px;
   margin: 20px;
@@ -376,7 +373,7 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .contact-container {
     display: grid;
-    height: 190vh;
+    height: 240vh;
     width: 300px;
     margin: -11px 10px -7px 0px;
   }
@@ -455,8 +452,8 @@ input:focus {
 @media only screen and (max-width: 600px) {
   .contact-container .card-contact {
     float: none;
-    width: 320px;
-    margin-left: -5px;
+    width: 270px;
+    margin-left: 0px;
     margin-top: -10px !important;
   }
 }
@@ -512,24 +509,6 @@ input:focus {
 }
 .contact-container .contact-fields i {
   color: grey;
-}
-
-.legal {
-  background: #b554ff;
-  background: linear-gradient(274deg, #b554ff 0%, #9533ff 46%, #722bff 85%);
-  padding: 0px;
-  width: 100%;
-}
-@media only screen and (max-width: 600px) {
-  .legal {
-    width: 100%;
-  }
-}
-.legal p {
-  padding: 30px;
-  text-align: center;
-  color: #fff;
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */

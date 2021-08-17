@@ -1,351 +1,278 @@
-@import  'global.scss';
-
-.full-banner{
-  width: 100%;
-  flex-wrap: wrap;
-
-  .mouse-scroll{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin-top: -12%;
-  }
-
-
-  @media only screen and (max-width: 600px) {
-    #orcamento{
-      display: none;
-    
-    }
-      img{
-          display: none;
-      }
-    &.full-banner{
-      height: 65vh;
-      background: $primary-color;
-      background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%); }
-      .mouse-scroll{
-        display: none;
-      }
+@import 'global.scss';
+.full-banner {
+	width: 100%;
+	flex-wrap: wrap;
+	.mouse-scroll {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		margin-top: -12%;
+	}
+	@media only screen and (max-width: 600px) {
+		#orcamento {
+			display: none;
+		}
+		img {
+			display: none;
+		}
+		&.full-banner {
+			height: 65vh;
+			background: $primary-color;
+			background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%);
+		}
+		.mouse-scroll {
+			display: none;
+		}
+	}
 }
 
-
+.banner-info {
+	position: absolute;
+	top: 15%;
+	left: 5%;
+	button {
+		@include primary-button
+	}
+	h1 {
+		margin-left: -15px;
+		font-size: 4rem;
+		color: $wite;
+		font-weight: 300;
+		padding: 20px;
+	}
+	@media only screen and (max-width: 600px) {
+		&.banner-info {
+			top: 15%;
+		}
+		h1 {
+			font-size: 3rem;
+			margin-top: -20px;
+		}
+	}
 }
 
-
-.banner-info{
-  position: absolute;
-  top: 15%;
-  left: 5%;
-  button{
-    @include primary-button
-  }
-
-  h1{
-    margin-left: -15px;
-    font-size: 4rem;
-    color: $wite;
-    font-weight: 300; 
-    padding: 20px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    &.banner-info{
-      top: 15%; }
-      h1{
-      font-size: 3rem;
-      margin-top: -20px;  
-      }}
-
+.container-servicos {
+	margin-top: 5%;
+	padding: 0px 0px 50px;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
 }
 
-  .container-servicos {
-    margin-top: 5%;
-    padding: 0px 0px 50px;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-  
- }
+.grid-card-services {
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	.container {
+		width: 100%;
+		margin-top: -10px;
+		height: 75vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
 
- .grid-card-services {
-   padding: 5px;
-    display: flex;
-    justify-content: center;
+.card-servico {
+	box-shadow: 3px 0.4rem 5px #e2e2e2;
+	margin-top: 10%;
+	padding: 18px;
+	margin: 5px;
+	width: 350px;
+	background-color: $wite;
+	border-radius: 15px;
+	text-align: left;
+	transition: all 0.3s;
+	p {
+		padding: 0px 1px 1px 15px;
+		font-weight: 400;
+		text-align: left;
+		color: $grey
+	}
+	button {
+		@include secondary-button();
+	}
+	&:hover {
+		transition: all 0.3s;
+		margin-top: -1%;
+	}
+	.model {
+		height: 250px;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	@media only screen and (max-width: 600px) {
+		&.card-servico img {
+			width: 330px;
+		}
+		button {
+			width: 19rem;
+		}
+		p {
+			font-size: 16px;
+			width: 280px;
+		}
+		&.card-servico {
+			margin-top: 5%;
+			margin: -11px;
+			margin-left: -4px;
+			width: 90%;
+			height: 500px;
+		}
+		.model {
+			height: 250px;
+		}
+		.container {
+			width: 100%;
+			margin-top: 20px;
+		}
+	}
+}
 
-    .container{
-      width:100%;
-      margin-top: -10px;
-      height: 75vh;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      
-    }
-  
- }
-  
-
- .card-servico {
-    box-shadow: 3px 0.4rem 5px #e2e2e2;
-    margin-top: 10%;
-    padding: 18px;
-    margin: 5px;
-    width: 350px;
-    background-color: $wite;
-    border-radius: 15px;
-    text-align: left;
-    transition: all 0.3s;
-    p{
-        padding: 0px 1px 1px 15px;
-        font-weight: 400;
-        text-align: left; 
-        color: $grey
-        }
-    
-    button{
-        @include secondary-button();
-    }
-    &:hover{
-        transition: all 0.3s;
-        margin-top: -1%;
-    }
-    .model{
-      height: 250px;
-      max-height: 100%;
-      max-width: 100%;
-    }
- @media only screen and (max-width: 600px) {
-
-     &.card-servico img{
-      width: 310px; }
-
-      button {
-        width: 19rem;
-      }
-    p{
-      font-size: 16px;
-      width: 280px;
-    }
-    &.card-servico{
-      margin: -11px;
-      margin-left: -4px;
-      width: 90%;
-      height: 500px;
-    }
-    .model{
-      height:250px;
-    }
-    .container{
-      width:100%;
-      margin-top: 20px;}
-    }
-   }
-
-   
 .container-about {
-    padding: 20px;
-    justify-content: center;
-
-    p, h1{
-        text-align: left;
-        color: $wite;
-    }
-   }
-
-   .about {
-    background: #ff4f73;
-    background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
-    padding: 50px;
-    margin-top: -2%;
-    border-radius: 70px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: flex;
-    align-items: center; 
-    
-    #animation-about {
-        float: right;
-    }
-
-    button{
-        @include tertiary-button;   
-    }
-    @media only screen and (max-width: 600px) {
-        .about .about-right img {
-          display: none;
-         }
-          .about button {
-            margin-left: 20px;
-          } }
+	padding: 20px;
+	justify-content: center;
+	p,
+	h1 {
+		text-align: left;
+		color: $wite;
+	}
 }
+
+.about {
+	background: #ff4f73;
+	background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
+	padding: 50px;
+	margin-top: -2%;
+	border-radius: 70px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	display: flex;
+	align-items: center;
+	#animation-about {
+		float: right;
+	}
+	button {
+		@include tertiary-button;
+	}
+	@media only screen and (max-width: 600px) {
+		.about .about-right img {
+			display: none;
+		}
+		.about button {
+			margin-left: 20px;
+		}
+	}
+}
+
 
 /*--------------- contact page---------------*/
 
-.header-pages{
-  @media only screen and (max-width: 600px){
-    width: 100%;
-    margin:0px;
-    margin: 0px;
-    #logo{
-      margin-top: -2%;
-      padding: 10px;
-    }
-  }
-
-  position: relative;
-  width: 99%;
-  background-color: blueviolet;
-  border-radius: 50px;
-  margin: 10px 7px 0px;
+.contact-container {
+	@media only screen and (max-width: 600px) {
+		display: grid;
+		height: 240vh;
+		width: 300px;
+		margin: -11px 10px -7px 0px;
+		.contact-info {
+			display: grid;
+			width: 300px !important;
+		}
+		lottie-player {
+			display: none;
+		}
+		h3 {
+			display: grid !important;
+		}
+		h2 {
+			margin-top: -5%;
+			width: 350px;
+			margin: -10px -0px -10px 0px;
+		}
+	}
+	border-radius: 30px;
+	margin: 20px;
+	width:96%;
+	height:100vh;
+	padding: 10px;
+	display: flex;
+	h1 {
+		color: $primary-color;
+		font-size: 40px;
+	}
+	.contact-info {
+		padding: 20px;
+		text-align: left;
+		width: 50%;
+		h3 {
+			font-family: $font-paragrapy;
+			display: inline;
+			color: $orange;
+			border: solid 1px $orange;
+			border-radius: 25px;
+			font-size: 16px;
+			padding: 5px 19px 5px;
+		}
+		#mapa {
+			background-color: $orange;
+			color: $wite;
+			cursor: pointer;
+		}
+		i {
+			margin: 5px
+		}
+		button {
+			@include primary-button;
+		}
+	}
+	.card-contact {
+		@media only screen and (max-width: 600px) {
+			float: none;
+			width: 270px;
+			margin-left: 0px;
+			margin-top: -10px !important;
+		}
+		float: right;
+		margin-left: 2%;
+		box-shadow: 0px 0.8rem 10px #e2e2e2;
+		border-radius: 25px;
+		background-color: $wite;
+		height: 600px;
+		width: 550px;
+		padding: 40px;
+	}
+	button {
+		font-size: 20px !important;
+		height: 60px !important;
+		margin: 5px;
+		margin-top: 5%;
+		width: 100% !important;
+		@include primary-button
+	}
+	.contact-fields {
+		@media only screen and (max-width: 600px) {
+			padding:0px 0px 0px 10px;
+		}
+		margin:10px 0px 10px 0px;
+		background-color: #fff;
+		border:solid 2px rgb(233, 233, 233);
+		border-radius: 10px;
+		height: 55px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		input {
+			font-family: $font-paragrapy;
+			font-size: 17px;
+			border: none;
+			padding: 10px;
+			height: 20px;
+			width: 90%;
+			color: $grey
+		}
+		i {
+			color: grey;
+		}
+	}
 }
-
-.contact-container{
-  @media only screen and (max-width: 600px) {
-      display: grid;
-      height:190vh;
-      width:300px;
-      margin: -11px 10px -7px 0px;
-      
-    .contact-info{
-      display: grid;
-      width: 300px !important;
-
-    }
-    lottie-player {
-      display: none;
-    }
-    h3{
-      display: grid !important;
-    }
-    h2{
-      margin-top: -5%;
-      width: 350px;
-      margin: -10px -0px -10px 0px;
-    }
-
-  }
-
-  border-radius: 30px;
-  margin: 20px;
-  width:96%;
-  height:100vh;
-  padding: 10px;
-  display: flex;
-
-  h1{
-    color:blueviolet;
-    font-size: 40px;
-  }
-
-  .contact-info{
-    padding: 20px ;
-    text-align: left;
-    width: 50%;
-
-
-    h3{
-      font-family: $font-paragrapy;
-      display: inline;
-      color: $orange;
-      border: solid 1px $orange;
-      border-radius: 25px;
-      font-size: 16px;
-      padding: 5px 19px 5px;
-    }
-    #mapa{
-      background-color: $orange;
-      color: $wite;
-      cursor: pointer;
-    }
-    i{
-      margin: 5px
-    }
-    button{
-      @include primary-button;   
-    }
-
-  }
-
-  .card-contact {
-    @media only screen and (max-width: 600px) { 
-        float: none;
-        width: 320px;
-        margin-left: -5px;
-        margin-top: -10px !important;
-     }
-     
-    float: right;
-    margin-left: 2%;
-    box-shadow: 0px 0.8rem 10px #e2e2e2;
-    border-radius: 25px;
-    background-color: $wite;
-    height: 600px;
-    width: 550px;
-    padding: 40px;
-  }
-    button{
-      font-size: 20px !important ;
-      height: 60px !important;
-      margin: 5px;
-      margin-top: 5%;
-      width: 100% !important;
-      @include primary-button
-    }
-
-    .contact-fields{
-      @media only screen and (max-width: 600px) { 
-        padding:0px 0px 0px 10px;
-  
-       }
-      margin:10px 0px 10px 0px;
-      background-color: #fff;
-      border:solid 2px rgb(233, 233, 233);
-      border-radius: 10px;
-      height: 55px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      input {
-        font-family: $font-paragrapy;
-        font-size: 17px;
-        border: none;
-        padding: 10px;
-        height: 20px;
-        width: 90%;
-        color:$grey 
-        
-      }
-      i{
-        color: grey;
-      }
-     }
-
-}
-
-
-.legal {
-  @media only screen and (max-width: 600px) { 
-    width: 100%;
- }
- background: rgb(181,84,255);
-background: linear-gradient(274deg, rgba(181,84,255,1) 0%, rgba(149,51,255,1) 46%, rgba(114,43,255,1) 85%);
-    padding: 0px; 
-    width: 100%;
-
-    p {
-      padding: 30px; 
-        text-align: center;
-        color: $wite;
-  
-        font-size: 16px; }
-  }
-  
-  
-
-
-
-
-      
