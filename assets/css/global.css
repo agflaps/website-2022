@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Poppins:wght@300&family=Raleway:wght@300&display=swap");
+body, html {
+  text-decoration: none;
+  list-style: none;
+  margin: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: Quicksand;
+  color: #7c7979;
+  margin: 0;
+}
+
+h2, label {
+  font-family: Quicksand;
+  font-size: 20px;
+  color: #7c7979;
+}
+
+p {
+  font-family: Poppins;
+  color: #7c7979;
+}
+
+a {
+  text-decoration: none;
+  font-style: none;
+}
+
+header {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+
+@media only screen and (max-width: 1024px) {
+  header ul, header #logo {
+    margin-top: 10rem;
+  }
+}
+
+header #logo {
+  margin-left: 6rem;
+}
+
+header ul {
+  margin-right: 2rem;
+}
+
+header #contact-btn {
+  width: 12rem;
+  font-family: Quicksand;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: solid 1px #7c7979;
+  color: #7c7979;
+  height: 35px;
+  width: 10rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  border: solid 2px #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  header #contact-btn {
+    width: 10rem;
+  }
+}
+
+header #contact-btn:hover {
+  background-color: #dbdbdb;
+  transition: all 0.4s;
+}
+
+header #contact-btn:hover {
+  background-color: #fff;
+  color: blueviolet;
+  transition: ease 0.3s;
+}
+
+@media screen and (max-width: 600px) {
+  header #logo {
+    margin-top: -10px;
+    margin-left: 25px;
+  }
+}
+
+header .menu-header {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  header .menu-header {
+    display: none;
+  }
+}
+
+header .menu-header li {
+  margin-right: 30px;
+  list-style: none;
+}
+
+header .menu-header ul, header .menu-header a {
+  text-decoration: none;
+  font-style: none;
+  font-family: Poppins;
+  color: #f7f7f7;
+}
+
+.header-pages {
+  position: relative;
+  background: #54c9ff;
+  background: linear-gradient(274deg, #6f23c5 0%, #6d17bd 46%, #7b1cd3 85%);
+}
+
+textarea {
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+footer {
+  background: #452e81;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.global-footer {
+  background: #452e81;
+  bottom: -2px;
+  position: absolute;
+  width: 100%;
+}
+
+.global-footer p {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+#_404 {
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-404 {
+  margin-top: 1%;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .error-404 {
+    width: 100%;
+    padding: 0;
+    height: 120%;
+  }
+  .error-404 lottie-player {
+    width: 350px !important;
+    height: 200px;
+  }
+  .error-404 button {
+    margin-top: -10%;
+  }
+  .error-404 .title-404 {
+    position: relative;
+    top: 50px;
+  }
+}
+
+.error-404 .title-404 {
+  text-align: center;
+}
+
+.error-404 lottie-player {
+  width: 600px;
+  height: 300px;
+}
+
+.error-404 button {
+  width: 12rem;
+  font-family: Quicksand;
+  height: 45px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border: solid 1px #7c7979;
+  color: #7c7979;
+}
+
+@media only screen and (max-width: 600px) {
+  .error-404 button {
+    width: 10rem;
+  }
+}
+
+.error-404 button:hover {
+  background-color: #dbdbdb;
+  transition: all 0.4s;
+}
+/*# sourceMappingURL=global.css.map */

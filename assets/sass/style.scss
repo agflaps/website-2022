@@ -1,278 +1,269 @@
-@import 'global.scss';
+@import "global.scss";
+
 .full-banner {
-	width: 100%;
-	flex-wrap: wrap;
-	.mouse-scroll {
-		align-items: center;
-		justify-content: center;
-		display: flex;
-		margin-top: -12%;
-	}
-	@media only screen and (max-width: 600px) {
-		#orcamento {
-			display: none;
-		}
-		img {
-			display: none;
-		}
-		&.full-banner {
-			height: 65vh;
-			background: $primary-color;
-			background: linear-gradient(90deg, rgb(40, 0, 104) 0%, #581aa2 35%, #a200ff 100%);
-		}
-		.mouse-scroll {
-			display: none;
-		}
-	}
+  width: 100%;
+  flex-wrap: wrap;
+  .mouse-scroll {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: -13%;
+  }
+  @media only screen and (max-width: 600px) {
+    img {
+      display: none;
+    }
+    
+      height: 85vh !important;
+      background: $primary-color;
+
+    .mouse-scroll {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    height: 85vh;
+    img {
+      display: none;
+    }
+
+    &.full-banner {
+
+      background: linear-gradient(
+        90deg,
+        rgb(78, 4, 175)0%,
+        #5e0ec0 35%,
+        #a200ff 100%
+      );
+
+    }
+  }
 }
 
 .banner-info {
-	position: absolute;
-	top: 15%;
-	left: 5%;
-	button {
-		@include primary-button
-	}
-	h1 {
-		margin-left: -15px;
-		font-size: 4rem;
-		color: $wite;
-		font-weight: 300;
-		padding: 20px;
-	}
-	@media only screen and (max-width: 600px) {
-		&.banner-info {
-			top: 15%;
-		}
-		h1 {
-			font-size: 3rem;
-			margin-top: -20px;
-		}
-	}
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  #orcamento-btn {
+    @include primary-btn;
+    animation: pulse 3s infinite;
+    @-webkit-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+    @-moz-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+    @-ms-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+    @keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
+    
+  }
+  #portfolio-btn {
+    @include basic-btn;
+    margin-left: 15px;
+    background-color: rgba(204, 143, 255, 0.596);
+    color: $wite;
+
+    &:hover{
+      background-color: rgba(205, 143, 255, 0.726); 
+    }
+
+  }
+  h1 {
+    font-size: 4rem;
+    color: $wite;
+    font-weight: 300;
+    padding-bottom: 3rem;
+  }
+  @media only screen and (max-width: 600px) {
+    
+    h1 {
+      font-size: 3rem;
+      margin-top: -20px;
+    }
+  }
 }
 
 .container-servicos {
-	margin-top: 5%;
-	padding: 0px 0px 50px;
-	text-align: center;
-	justify-content: center;
-	width: 100%;
+  h1 {
+    margin-bottom: 2rem;
+  }
+  margin-top: 5%;
+  padding: 0px 0px 50px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .grid-card-services {
-	padding: 5px;
-	display: flex;
-	justify-content: center;
-	.container {
-		width: 100%;
-		margin-top: -10px;
-		height: 75vh;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card-servico {
-	box-shadow: 3px 0.4rem 5px #e2e2e2;
-	margin-top: 10%;
-	padding: 18px;
-	margin: 5px;
-	width: 350px;
-	background-color: $wite;
-	border-radius: 15px;
-	text-align: left;
-	transition: all 0.3s;
-	p {
-		padding: 0px 1px 1px 15px;
-		font-weight: 400;
-		text-align: left;
-		color: $grey
-	}
-	button {
-		@include secondary-button();
-	}
-	&:hover {
-		transition: all 0.3s;
-		margin-top: -1%;
-	}
-	.model {
-		height: 250px;
-		max-height: 100%;
-		max-width: 100%;
-	}
-	@media only screen and (max-width: 600px) {
-		&.card-servico img {
-			width: 330px;
-		}
-		button {
-			width: 19rem;
-		}
-		p {
-			font-size: 16px;
-			width: 280px;
-		}
-		&.card-servico {
-			margin-top: 5%;
-			margin: -11px;
-			margin-left: -4px;
-			width: 90%;
-			height: 500px;
-		}
-		.model {
-			height: 250px;
-		}
-		.container {
-			width: 100%;
-			margin-top: 20px;
-		}
-	}
+
+  @media only screen and (max-width: 600px) {
+    margin-left: -10px;
+    width: 90%;
+
+    img {
+      width: 330px
+    }
+
+    p {
+      @include text-paragrapy();
+      width: 280px;
+    }  
+    button{
+      width: 100% !important;
+    }
+    .model {
+      height: 250px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+
+  box-shadow: $box-shadow;
+  margin-top: 10%;
+  padding: 18px;
+  margin: 5px;
+  width: 350px;
+  background-color: $wite;
+  border-radius: 15px;
+  transition: all 0.3s;
+  
+  button {
+    @include secondary-btn();
+    width: 100%;
+  }
+  &:hover {
+    transition: all 0.3s;
+    margin-top: -1%;
+  }
+  .model {
+    height: 250px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
 }
 
 .container-about {
-	padding: 20px;
-	justify-content: center;
-	p,
-	h1 {
-		text-align: left;
-		color: $wite;
-	}
+  padding: 20px;
+  justify-content: center;
+  p,
+  h1 {
+    text-align: left;
+    color: $wite;
+  }
 }
-
 .about {
-	background: #ff4f73;
-	background: linear-gradient(150deg, #fdab5d 0%, rgba(255, 100, 79, 0.869) 50%, rgba(253, 110, 110, 0.804) 100%);
-	padding: 50px;
-	margin-top: -2%;
-	border-radius: 70px;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	display: flex;
-	align-items: center;
-	#animation-about {
-		float: right;
-	}
-	button {
-		@include tertiary-button;
-	}
-	@media only screen and (max-width: 600px) {
-		.about .about-right img {
-			display: none;
-		}
-		.about button {
-			margin-left: 20px;
-		}
-	}
+  background: #ff4f73;
+  background: linear-gradient(
+    150deg,
+    #fdab5d 0%,
+    rgba(255, 100, 79, 0.869) 50%,
+    rgba(253, 110, 110, 0.804) 100%
+  );
+  padding: 50px;
+  margin-top: -2%;
+  border-radius: 70px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  #animation-about {
+    float: right;
+  }
+  button {
+    @include basic-btn;
+    height: 40px
+  }
+  @media only screen and (max-width: 600px) {
+    .about .about-right img {
+      display: none;
+    }
+    .about button {
+      margin-left: 20px;
+    }
+  }
 }
 
 
 /*--------------- contact page---------------*/
 
-.contact-container {
-	@media only screen and (max-width: 600px) {
-		display: grid;
-		height: 240vh;
-		width: 300px;
-		margin: -11px 10px -7px 0px;
-		.contact-info {
-			display: grid;
-			width: 300px !important;
-		}
-		lottie-player {
-			display: none;
-		}
-		h3 {
-			display: grid !important;
-		}
-		h2 {
-			margin-top: -5%;
-			width: 350px;
-			margin: -10px -0px -10px 0px;
-		}
-	}
-	border-radius: 30px;
-	margin: 20px;
-	width:96%;
-	height:100vh;
-	padding: 10px;
-	display: flex;
-	h1 {
-		color: $primary-color;
-		font-size: 40px;
-	}
-	.contact-info {
-		padding: 20px;
-		text-align: left;
-		width: 50%;
-		h3 {
-			font-family: $font-paragrapy;
-			display: inline;
-			color: $orange;
-			border: solid 1px $orange;
-			border-radius: 25px;
-			font-size: 16px;
-			padding: 5px 19px 5px;
-		}
-		#mapa {
-			background-color: $orange;
-			color: $wite;
-			cursor: pointer;
-		}
-		i {
-			margin: 5px
-		}
-		button {
-			@include primary-button;
-		}
-	}
-	.card-contact {
-		@media only screen and (max-width: 600px) {
-			float: none;
-			width: 270px;
-			margin-left: 0px;
-			margin-top: -10px !important;
-		}
-		float: right;
-		margin-left: 2%;
-		box-shadow: 0px 0.8rem 10px #e2e2e2;
-		border-radius: 25px;
-		background-color: $wite;
-		height: 600px;
-		width: 550px;
-		padding: 40px;
-	}
-	button {
-		font-size: 20px !important;
-		height: 60px !important;
-		margin: 5px;
-		margin-top: 5%;
-		width: 100% !important;
-		@include primary-button
-	}
-	.contact-fields {
-		@media only screen and (max-width: 600px) {
-			padding:0px 0px 0px 10px;
-		}
-		margin:10px 0px 10px 0px;
-		background-color: #fff;
-		border:solid 2px rgb(233, 233, 233);
-		border-radius: 10px;
-		height: 55px;
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		input {
-			font-family: $font-paragrapy;
-			font-size: 17px;
-			border: none;
-			padding: 10px;
-			height: 20px;
-			width: 90%;
-			color: $grey
-		}
-		i {
-			color: grey;
-		}
-	}
+.main-contact {
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact-container{
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    lottie-player {
+       display: none ;
+     } }
+
+  margin-left: 0px;
+  width: 50rem;
+  justify-content: center;
+  padding: 20px 20px;
+
+  h2{
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      margin: 0px;
+      text-align: justify;
+    }
+
+    width: 80%;
+    margin-left: 10px;
+    @include text-paragrapy()
+  }
+
+  lottie-player {
+    margin-left: -70px;
+  }
+}
+.contact-info {
+display: inline-flex;
+font-size: 14px;
+flex-wrap: wrap;
+justify-content: left;
+
+h3{
+padding:7px;
+padding-right:  20px;
+border:solid 1px  $purple;
+font-family: $font-paragrapy;
+color:  $purple;
+margin: 5px;
+border-radius: 30px;
+}
+i{
+  color:  $purple;
+  padding-left: 10px;
+}
+
+}
+.form-container {
+  @media only screen and (max-width: 600px) {
+    margin: 10px;
+  }
+  margin-left: -100px;
+  width: 35rem;
+  height: 38rem;
+  
+  form {
+    @include forms();
+   }
+
 }

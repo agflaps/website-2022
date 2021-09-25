@@ -3,13 +3,30 @@
 @import 'variables.scss';
 
 
+
+
 body, html{
-    margin: 0;
     text-decoration: none;
     list-style: none;
+    margin: 0%;
     width: 100%;
     height: 100%;
     background-color:$background-color;
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent !important;
+    }
+    ::-webkit-scrollbar {
+margin-top: 2% !important;
+        
+        background-color: transparent;
+
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a0a0a0;
+        border-radius: 30px;
+        height: 5%!important;
+    }
 }
 
 h1{
@@ -17,51 +34,71 @@ h1{
     font-weight: 500;
     font-family:$font-title ;
     color: $grey;
+    margin: 0;
   }
-  h2, label{
-      font-family: $font-title;
-      font-size: 20px;
-      color: $grey;
 
- }
-
-  p{
-      font-family:$font-paragrapy;
-      color: $grey;
+ p{
+    @include text-paragrapy()
   }
 
   a{
-    text-decoration: none; 
-    font-style: none;
+font-family: $font-title;
+  }
+
+  i{
+    padding-right: 5px !important;
+      color: $grey;
   }
 
 header{
+    @media only screen and (max-width: 1024px){
+        ul, #logo{
+            margin-top:10rem;
+        }
+
+    }
+    padding-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    margin:0px;
     
-    #circle-wite{
-        @include tertiary-button();
-    }
     #logo{
-        margin-left:80px;
+        margin-left:6rem;
     }
-    img{
-        margin-left: 70px;
+    ul{
+        margin-right:2rem;
     }
+    #contact-btn{
+        @include basic-btn;
+        height: 35px;
+        width: 10rem;
+        background-color: transparent;
+        border: none;
+        color: $wite;
+        border: solid 2px $wite;
+
+        &:hover{
+            background-color: $wite;
+            color: $primary-color;
+            transition: ease 0.3s;
+
+        }
+        
+    }
+
     @media screen and (max-width:600px) {
         #logo{
-            margin-top: 15px;
-            margin-left:30px;
+            margin-top: 1px;
+            margin-left:25px;
         }
     }
 
 
 
     .menu-header{
+        position: relative;
         display:inline-flex;
         justify-content: space-between;
         @media only screen and (max-width: 600px)  {
@@ -72,72 +109,73 @@ header{
             list-style: none;
         }
         ul, a{
-            text-decoration: none;
-            font-style: none;
-            font-family: $font-paragrapy;
-            color:$background-color;
-         
+         @include text-link
         }
 
     }
 
 }
 
+
 .header-pages{
     position: relative;
-    width:100%;
-    background: rgb(84, 201, 255);
-    background: linear-gradient(274deg, rgb(111, 35, 197) 0%, rgb(109, 23, 189) 46%, rgb(123, 28, 211) 85%);
-    margin: 0px;
+    background-color: $purple;
     }
 
-#whatsapp-button{
-display: none;
-            @media only screen and (max-width: 600px)  {
-            display: inline;
-            position: fixed;
-            top: 76%;
-            right: 2.5%;
-            padding: 10px;
-            z-index: 10000000;
-              } 
-}
-textarea{
-    margin: 10px 0px 0px 0px;
-    background-color: #fff;
-    border:solid 2px rgb(231, 231, 231);
-    border-radius: 10px;
-    max-width: 97%;
-    max-height: 23%;
-    padding: 10px; 
-    font-family:$font-paragrapy; 
-    font-size:17px;
-
-    &:focus{
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border:solid 2px $primary-color;
-     }
-}
-  input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-
-
-}
-
-.global-footer{
-    @media only screen and (max-width: 600px) { 
-      width: 100%;
-   }
-      padding: 0px;
-      background: rgb(69, 46, 129);
-      width: 100%;
-  
-      p {
-        padding: 30px; 
-          text-align: center;
-          color: $wite;
     
-          font-size: 16px; }
+
+#footer{
+    background: rgb(69, 46, 129);
+    bottom: 0;
+    padding: 20px;
+    p {
+        @include text-paragrapy();
+        text-align:center;
+        color: $wite;
+      }
+}
+
+
+
+#_404{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+    .error-404{
+        @media only screen and (max-width: 600px) { 
+            width: 100%;
+            padding: 0;
+            height: 120%;
+            
+            lottie-player{
+                width: 350px !important;
+                height: 200px;
+                
+            }
+                button{
+                    margin-top: -10%;
+                }
+                .title-404{
+                    position: relative;
+                    top: 50px;
+                }
+        }
+margin-top: 1%;
+padding: 25px;
+        .title-404{
+            text-align: center;
+
+        }
+        lottie-player{
+            width: 600px;
+            height: 300px;
+            
+        }
+        button{
+            @include basic-btn()
+
+        }
     }

@@ -13,11 +13,11 @@
 
       <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/css/lightslider.css"/>
-      <script src="//code.jivosite.com/widget/HMnUt2mdMp" async></script>
       <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
       <!--Jquery-->
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="//code.jivosite.com/widget/HMnUt2mdMp" async></script>
       <script type="text/javascript" src="js/lightslider.js"></script> 
       <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
       <script>
@@ -31,13 +31,8 @@
          <a href="https://newflaps.com"> <img id="logo" src="../assets/images/logo.png" height="57px" width="120px"></a>
          <ul class="menu-header">
             <li>
-               <a  href="https://newflaps.com">
+               <a  href="../index.html">
                   <h3>Início</h3>
-               </a>
-            </li>
-            <li>
-               <a  href="#about">
-                  <h3>Sobre</h3>
                </a>
             </li>
             <li>
@@ -46,32 +41,49 @@
                </a>
             </li>
             <li>
+               <a  href="#about">
+                  <h3>Sobre</h3>
+               </a>
+            </li>
+
+            <li>
                <a href="#">
                   <h3>Blog</h3>
                </a>
             </li>
             <li>
                <a  href="#" >
-                  <h3 style="color:blueviolet;background-color: #fff;"id="circle-wite">Contato</h3>
+                  <p><a href="/pages/contact.html"><button style="background:#fff;color:blueviolet" id="contact-btn">Contato</button></a></p>
                </a>
             </li>
          </ul>
       </header>
-      <main>
-         <section class="contact-container">
-            <div class="contact-info">
+      <main class="main-contact">
+
+
+         <div class="contact-container">
+            <div>
                <h1>Vamos falar sobre o seu projeto?</h1>
-               <h2>Qual é a sua necessidade? Faça um resumo do projeto <br> dizendo qual o objetivo que pretende alcançar  e quem <br> sabe podemos marcar uma call para aprofundar o assunto.</h2>
+               <h2>Qual é a sua necessidade? Faça um resumo do projeto dizendo qual o objetivo que pretende alcançar  e quem sabe podemos marcar uma call para aprofundar o assunto.</h2>
                <br>
-               <h3><i class="far fa-envelope"></i> contato@newflaps.com</h3>
-               <h3><i class="fab fa-whatsapp"></i> (11) 9 7726-9286</h3>
-               <a onclick="window.open('https://goo.gl/maps/YrQeemgwrpf3UL9w6','page.html','status=no,Width=1080, left=90px, Height=1080');" target="_blank" >
-                  <h3 id="mapa"><i class="fas fa-map-marker-alt"></i> Mapa</h3>
-               </a>
+               <div class="contact-info">
+                  <h3 id="email"><i class="far fa-envelope" ></i> contato@newflaps.com</h3>
+                  <h3 id="whatsapp"><i class="fab fa-whatsapp"></i> (11) 9 7726-9286</h3>
+                  <a onclick="window.open('https://goo.gl/maps/k963eEbP8vjEDqet5','page.html','status=no,Width=1080, left=90px, Height=1080');" target="_blank" >
+                     <h3  style="cursor: pointer; background:blueviolet; color: #fff" id="mapa"><i  style="color: #fff"" class="fas fa-map-marker-alt"></i> Mapa</h3>
+                  </a>
+               </div>
                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-               <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xpfalst4.json"  background="transparent" style="margin-left:-12%; margin-top: 1%;  height: 450px;" speed="0.6"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+               <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xpfalst4.json"  background="transparent" style="height: 410px;" speed="0.6"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             </div>
-            <form action="https://api.staticforms.xyz/submit" method="POST" class="card-contact">
+
+         </div>
+
+
+
+         <div class="form-container">
+
+            <form action="form.php" method="POST"class="form" class="card-contact">
                <input type="hidden" name="accessKey" type="hidden"value="adaaa7fa-2cda-4fd0-9027-9a4281c8e637">
                <input type="hidden" name="subject" value="Contato Site" />
                <input type="hidden" name="redirectTo" value="https://newflaps.com">
@@ -84,18 +96,25 @@
                <div class="contact-fields">
                   <i class="far fa-envelope-open"></i><input required type="email" name="email">
                </div>
-               <label>Celular</label>
+               <label>Telefone</label>
                <div class="contact-fields">
                   <i class="fas fa-mobile-alt"></i><input required type="number" name="celular">
                </div>
-               <label>Resumo</label>
-               <textarea name="message" required id="contact-text-area" cols="310" rows="5"></textarea>
+
+               <label>Serviço</label>
+                  <select required type="text" name="service">
+                     <option value="1">Desenvolvimento Web</option>
+                     <option value="1">Criação de logomarca</option>
+
+               <textarea name="message" placeholder="Faça um resumo do seu projeto" required id="contact-text-area" cols="1" rows="7"></textarea>
                <button type="submit">Enviar</button>
             </form>
-         </section>
+
+         </div>
       </main>
-      <footer>
-         <div class="global-footer">
+
+      <footer id="footer">
+         <div>
             <p>©2020-2021 Agência New Flaps. Todos os direitos reservados</p>
          </div>
       </footer>
