@@ -69,7 +69,7 @@
                <div class="contact-info">
                   <h3 id="email"><i class="far fa-envelope" ></i> contato@newflaps.com</h3>
                   <h3 id="whatsapp"><i class="fab fa-whatsapp"></i> (11) 9 7726-9286</h3>
-                  <a onclick="window.open('https://goo.gl/maps/k963eEbP8vjEDqet5','page.html','status=no,Width=1080, left=90px, Height=1080');" target="_blank" >
+                  <a onclick="window.open('https://goo.gl/maps/k963eEbP8vjEDqet5','page.html','status=no,Width=1300, margin-top=1210px, left=90px, Height=1080');" target="_blank" >
                      <h3  style="cursor: pointer; background:blueviolet; color: #fff" id="mapa"><i  style="color: #fff"" class="fas fa-map-marker-alt"></i> Mapa</h3>
                   </a>
                </div>
@@ -83,7 +83,7 @@
 
          <div class="form-container">
 
-            <form action="form.php" method="POST"class="form" class="card-contact">
+            <form action="https://api.staticforms.xyz/submit" method="POST"class="form" class="card-contact">
                <input type="hidden" name="accessKey" type="hidden"value="adaaa7fa-2cda-4fd0-9027-9a4281c8e637">
                <input type="hidden" name="subject" value="Contato Site" />
                <input type="hidden" name="redirectTo" value="https://newflaps.com">
@@ -101,12 +101,8 @@
                   <i class="fas fa-mobile-alt"></i><input required type="number" name="celular">
                </div>
 
-               <label>Serviço</label>
-                  <select required type="text" name="service">
-                     <option value="1">Desenvolvimento Web</option>
-                     <option value="1">Criação de logomarca</option>
-
-               <textarea name="message" placeholder="Faça um resumo do seu projeto" required id="contact-text-area" cols="1" rows="7"></textarea>
+               <label>Resumo</label>
+               <textarea name="message" required id="contact-text-area" cols="1" rows="7"></textarea>
                <button type="submit">Enviar</button>
             </form>
 

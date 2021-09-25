@@ -1,181 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
 @import 'mixins.scss';
 @import 'variables.scss';
-
-
-
-
-body, html{
-    text-decoration: none;
-    list-style: none;
-    margin: 0%;
-    width: 100%;
-    height: 100%;
-    background-color:$background-color;
-
-    ::-webkit-scrollbar-track {
-        background-color: transparent !important;
-    }
-    ::-webkit-scrollbar {
-margin-top: 2% !important;
-        
-        background-color: transparent;
-
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #a0a0a0;
-        border-radius: 30px;
-        height: 5%!important;
-    }
+body,
+html {
+	text-decoration: none;
+	list-style: none;
+	margin: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: $background-color;
+	 ::-webkit-scrollbar-track {
+		background-color: transparent !important;
+	}
+	 ::-webkit-scrollbar {
+		margin-top: 2% !important;
+		background-color: transparent;
+	}
+	 ::-webkit-scrollbar-thumb {
+		background: #a0a0a0;
+		border-radius: 30px;
+		height: 5%!important;
+	}
 }
 
-h1{
-    font-size: 35px;
-    font-weight: 500;
-    font-family:$font-title ;
-    color: $grey;
-    margin: 0;
-  }
+h1 {
+	font-size: 35px;
+	font-weight: 500;
+	font-family: $font-title;
+	color: $grey;
+	margin: 0;
+}
 
- p{
-    @include text-paragrapy()
-  }
+p {
+	@include text-paragrapy()
+}
 
-  a{
-font-family: $font-title;
-  }
+a {
+	font-family: $font-title;
+    font-style: none;
+}
 
-  i{
-    padding-right: 5px !important;
-      color: $grey;
-  }
 
-header{
-    @media only screen and (max-width: 1024px){
-        ul, #logo{
-            margin-top:10rem;
-        }
 
-    }
-    padding-top: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    
+header {
+
+	@media only screen and (max-width: 1024px) {
+		ul, #logo {
+			margin-top:10rem;
+		}
+	}
+
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	#logo {
+		margin-left: 6rem;
+	}
+	ul {
+		margin-right: 2rem;
+	}
+	#contact-btn {
+		@include basic-btn;
+		height: 35px;
+		width: 10rem;
+		background-color: transparent;
+		border: none;
+		color: $wite;
+		border: solid 2px $wite;
+		&:hover {
+			background-color: $wite;
+			color: $primary-color;
+			transition: ease 0.3s;
+		}
+	}
+	@media screen and (max-width:600px) {
+		#logo {
+			margin-top: 1px;
+			margin-left: 25px;
+		}
+	}
+	.menu-header {
+		position: relative;
+		display: inline-flex;
+		justify-content: space-between;
+		@media only screen and (max-width: 600px) {
+			display: none;
+		}
+		li {
+			margin-right: 30px;
+			list-style: none;
+		}
+		ul,
+		a {
+			@include text-link
+		}
+	}
+}
+
+.header-pages {
+    @media only screen and (max-width: 1024px) {
+		ul, #logo {
+			margin-top:0rem;
+            margin-left: 2rem;
+		}
+	}
+
+	position: relative;
+	background-color: $purple;
     #logo{
-        margin-left:6rem;
+        padding-bottom: 10px;
     }
-    ul{
-        margin-right:2rem;
-    }
-    #contact-btn{
-        @include basic-btn;
-        height: 35px;
-        width: 10rem;
-        background-color: transparent;
-        border: none;
-        color: $wite;
-        border: solid 2px $wite;
+}
 
-        &:hover{
-            background-color: $wite;
-            color: $primary-color;
-            transition: ease 0.3s;
-
-        }
-        
-    }
-
-    @media screen and (max-width:600px) {
-        #logo{
-            margin-top: 1px;
-            margin-left:25px;
-        }
-    }
-
-
-
-    .menu-header{
-        position: relative;
-        display:inline-flex;
-        justify-content: space-between;
-        @media only screen and (max-width: 600px)  {
-              display: none;
-            } 
-        li{
-            margin-right:30px;
-            list-style: none;
-        }
-        ul, a{
-         @include text-link
-        }
-
-    }
-
+#footer {
+	background: rgb(69, 46, 129);
+	bottom: 0;
+	padding: 20px;
+	p {
+		@include text-paragrapy();
+		text-align: center;
+        font-size: 15px;
+		color: $wite;
+	}
 }
 
 
-.header-pages{
-    position: relative;
-    background-color: $purple;
-    }
-
-    
-
-#footer{
-    background: rgb(69, 46, 129);
-    bottom: 0;
-    padding: 20px;
-    p {
-        @include text-paragrapy();
-        text-align:center;
-        color: $wite;
-      }
+#_404 {
+	display: grid;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 100px;
 }
 
-
-
-#_404{
-    display: grid;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
+.error-404 {
+	@media only screen and (max-width: 600px) {
+		width: 100%;
+		padding: 0;
+		height: 120%;
+		lottie-player {
+			width: 350px !important;
+			height: 200px;
+		}
+		button {
+			margin-top: -10%;
+		}
+		.title-404 {
+			position: relative;
+			top: 50px;
+		}
+	}
+	margin-top: 1%;
+	padding: 25px;
+	.title-404 {
+		text-align: center;
+	}
+	lottie-player {
+		width: 600px;
+		height: 300px;
+	}
+	button {
+		@include basic-btn()
+	}
 }
-    .error-404{
-        @media only screen and (max-width: 600px) { 
-            width: 100%;
-            padding: 0;
-            height: 120%;
-            
-            lottie-player{
-                width: 350px !important;
-                height: 200px;
-                
-            }
-                button{
-                    margin-top: -10%;
-                }
-                .title-404{
-                    position: relative;
-                    top: 50px;
-                }
-        }
-margin-top: 1%;
-padding: 25px;
-        .title-404{
-            text-align: center;
-
-        }
-        lottie-player{
-            width: 600px;
-            height: 300px;
-            
-        }
-        button{
-            @include basic-btn()
-
-        }
-    }

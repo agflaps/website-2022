@@ -1,37 +1,39 @@
-@mixin base-btn {
+@mixin basic-btn {
     @media only screen and (max-width: 600px){
         width: 10rem;
     }
+    
     width: 12rem;
+    background-color: rgba(255, 255, 255, 0.342);
     font-family: $font-btn;
     height: 45px;
     border-radius: 30px;
-    border:solid 1px;
-    border-color: $grey-shadow;
+    border:none;
     font-size: 17px;
     cursor: pointer;
     font-weight: 600;
-
+    color: $wite;
+    &:hover{
+        transition: all 0.4s;
+        background-color: rgba(255, 255, 255, 0.527);
+    }
 }
 
 @mixin primary-btn {
     background: $orange linear-gradient(to right, $orange, $yellow);
-    @include base-btn();
+    @include basic-btn();
     box-shadow: 0 1px 8px #f894658f;
     border: none;
-    color:$wite;
 }
 
 
 @mixin secondary-btn{
  
-  @include base-btn();
+  @include basic-btn();
    border: #d794fd 1px solid;
    background: none;
    color: #7a0aca;
-   font-size: 19px;
-  
-    
+   
 &:hover{
     background: #ba04df linear-gradient(to right, #7607c5, #9531e7);
     color: $background-color;
@@ -43,14 +45,6 @@
     
 }
 
-@mixin basic-btn {
-@include base-btn();
-color: $grey;
-&:hover{
-    background-color: rgb(219, 219, 219);
-    transition: all 0.4s;
-}
-}
 
 /*----- FORMATTING TEXT AND LABELS  -----*/
 
@@ -128,12 +122,10 @@ color: $grey;
   
       textarea{
         @include text-paragrapy();
-        color: $grey;
         border-radius: 10px;
         max-width: 500px;
         height: 100px;
         font-size: 15px;
-        margin-top: 20px;
         padding-top: 10PX;
         padding-left: 10px;
         &:focus {
@@ -144,6 +136,7 @@ color: $grey;
       @include primary-btn();
       margin-top: 20px;
       width: 100%;
+    
  
     }
 }

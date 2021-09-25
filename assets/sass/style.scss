@@ -44,6 +44,7 @@
   position: absolute;
   top: 25%;
   left: 5%;
+
   #orcamento-btn {
     @include primary-btn;
     animation: pulse 3s infinite;
@@ -51,19 +52,12 @@
     @-moz-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
     @-ms-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
     @keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
-    
   }
   #portfolio-btn {
     @include basic-btn;
     margin-left: 15px;
-    background-color: rgba(204, 143, 255, 0.596);
-    color: $wite;
-
-    &:hover{
-      background-color: rgba(205, 143, 255, 0.726); 
-    }
-
   }
+  
   h1 {
     font-size: 4rem;
     color: $wite;
@@ -104,9 +98,8 @@
 }
 
 .card-servico {
-
   @media only screen and (max-width: 600px) {
-    margin-left: -10px;
+    margin-left: -20px;
     width: 90%;
 
     img {
@@ -115,7 +108,7 @@
 
     p {
       @include text-paragrapy();
-      width: 280px;
+      width: 310px;
     }  
     button{
       width: 100% !important;
@@ -163,6 +156,9 @@
   }
 }
 .about {
+  div, p{
+    width: 30rem;
+  }
   background: #ff4f73;
   background: linear-gradient(
     150deg,
@@ -171,24 +167,27 @@
     rgba(253, 110, 110, 0.804) 100%
   );
   padding: 50px;
-  margin-top: -2%;
   border-radius: 70px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
   align-items: center;
-  #animation-about {
-    float: right;
-  }
   button {
     @include basic-btn;
-    height: 40px
   }
+  
   @media only screen and (max-width: 600px) {
-    .about .about-right img {
+
+    lottie-player {
+      display: none ;
+    }
+     div, p{
+      width: 18rem;
+    }
+    .about-right img {
       display: none;
     }
-    .about button {
+    button {
       margin-left: 20px;
     }
   }
@@ -220,7 +219,8 @@
   h2{
     @media only screen and (max-width: 600px) {
       width: 100%;
-      margin: 0px;
+      margin-left: 0;
+      margin-top: 15px;
       text-align: justify;
     }
 
