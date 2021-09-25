@@ -163,6 +163,8 @@ header {
 		height: 300px;
 	}
 	button {
-		@include basic-btn()
+		@include basic-btn();
+        background-color: $grey;
+        
 	}
 }

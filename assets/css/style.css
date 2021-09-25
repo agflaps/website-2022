@@ -30,13 +30,13 @@ h1 {
   font-size: 35px;
   font-weight: 500;
   font-family: Quicksand;
-  color: #7c7c7c;
+  color: #8b8b8b;
   margin: 0;
 }
 
 p {
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -73,7 +73,7 @@ header ul {
 }
 header #contact-btn {
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -96,7 +96,7 @@ header #contact-btn {
 }
 header #contact-btn:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 header #contact-btn:hover {
   background-color: #fff;
@@ -152,7 +152,7 @@ header .menu-header a {
 }
 #footer p {
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -205,7 +205,7 @@ header .menu-header a {
 }
 .error-404 button {
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -214,6 +214,7 @@ header .menu-header a {
   cursor: pointer;
   font-weight: 600;
   color: #fff;
+  background-color: #8b8b8b;
 }
 @media only screen and (max-width: 600px) {
   .error-404 button {
@@ -222,7 +223,7 @@ header .menu-header a {
 }
 .error-404 button:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 
 .full-banner {
@@ -267,7 +268,7 @@ header .menu-header a {
 .banner-info #orcamento-btn {
   background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -287,7 +288,7 @@ header .menu-header a {
 }
 .banner-info #orcamento-btn:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 @-webkit-keyframes pulse {
   to {
@@ -311,7 +312,7 @@ header .menu-header a {
 }
 .banner-info #portfolio-btn {
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -329,7 +330,7 @@ header .menu-header a {
 }
 .banner-info #portfolio-btn:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 .banner-info h1 {
   font-size: 4rem;
@@ -388,7 +389,7 @@ header .menu-header a {
   }
   .card-servico p {
     font-family: Poppins;
-    color: #7c7c7c;
+    color: #8b8b8b;
     font-size: 17px;
     font-weight: 500;
     text-align: left;
@@ -417,7 +418,7 @@ header .menu-header a {
 }
 .card-servico button {
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -438,7 +439,7 @@ header .menu-header a {
 }
 .card-servico button:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 .card-servico button:hover {
   background: #ba04df linear-gradient(to right, #7607c5, #9531e7);
@@ -482,7 +483,7 @@ header .menu-header a {
 }
 .about button {
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -499,7 +500,7 @@ header .menu-header a {
 }
 .about button:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 @media only screen and (max-width: 600px) {
   .about lottie-player {
@@ -544,7 +545,7 @@ header .menu-header a {
   width: 80%;
   margin-left: 10px;
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -605,7 +606,7 @@ header .menu-header a {
   text-align: left;
   box-shadow: 2px 6px 7px #e7e7e7;
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -628,7 +629,7 @@ header .menu-header a {
   align-items: center;
 }
 .form-container form input {
-  color: #7c7c7c;
+  color: #8b8b8b;
   padding-left: 10px;
   font-size: 16px;
   height: 45px;
@@ -642,7 +643,7 @@ header .menu-header a {
   background-color: #f0f0f0;
   cursor: pointer;
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -658,7 +659,7 @@ header .menu-header a {
 }
 .form-container form textarea {
   font-family: Poppins;
-  color: #7c7c7c;
+  color: #8b8b8b;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -680,7 +681,7 @@ header .menu-header a {
 .form-container form button {
   background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
-  background-color: rgba(255, 255, 255, 0.342);
+  background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
@@ -701,7 +702,7 @@ header .menu-header a {
 }
 .form-container form button:hover {
   transition: all 0.4s;
-  background-color: rgba(255, 255, 255, 0.527);
+  background-color: rgba(212, 212, 212, 0.829);
 }
 
 /*# sourceMappingURL=style.css.map */
