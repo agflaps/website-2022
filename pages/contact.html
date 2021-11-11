@@ -27,9 +27,15 @@
       <script src="https://www.google-analytics.com/analytics.js" async></script>
    </head>
    <body>
-      <header class="header-pages">
-         <a href="https://newflaps.com"> <img id="logo" src="../assets/images/logo.png" height="57px" width="120px"></a>
-         <ul class="menu-header">
+      <header id="header" style="background-color:#452e81;
+      ;">
+
+         <a href="../index.html"> <img id="logo" src="../assets/images/logo.png" height="57px" width="120px"></a>
+         <nav id="nav">
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
+               <span class="hamburger"></span>
+            </button>
+         <ul id="menu">
             <li>
                <a  href="../index.html">
                   <h3>Início</h3>
@@ -47,16 +53,17 @@
             </li>
 
             <li>
-               <a href="#">
+               <a target="_blank" href="https://newflaps.com.br/blog/">
                   <h3>Blog</h3>
                </a>
             </li>
             <li>
                <a  href="#" >
-                  <p><a href="/pages/contact.html"><button style="background:#fff;color:blueviolet" id="contact-btn">Contato</button></a></p>
+                  <a href="/pages/contact.html"><button style="background:#fff;color:blueviolet" id="contact-btn">Contato</button></a>
                </a>
             </li>
          </ul>
+      </nav>
       </header>
       <main class="main-contact">
 
@@ -64,8 +71,11 @@
          <div class="contact-container">
             <div>
                <h1>Vamos falar sobre o seu projeto?</h1>
-               <h2>Qual é a sua necessidade? Faça um resumo do projeto dizendo qual o objetivo que pretende alcançar  e quem sabe podemos marcar uma call para aprofundar o assunto.</h2>
+               <p>Faça um resumo do projeto dizendo qual o objetivo que pretende <br>alcançar e quem sabe podemos marcar uma call para aprofundar o assunto.</p>
                <br>
+
+               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+               <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xpfalst4.json"  background="transparent" style="height: 410px;" speed="0.6"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
                <div class="contact-info">
                   <h3 id="email"><i class="far fa-envelope" ></i> contato@newflaps.com</h3>
                   <h3 id="whatsapp"><i class="fab fa-whatsapp"></i> (11) 9 7726-9286</h3>
@@ -73,8 +83,6 @@
                      <h3  style="cursor: pointer; background:blueviolet; color: #fff" id="mapa"><i  style="color: #fff"" class="fas fa-map-marker-alt"></i> Mapa</h3>
                   </a>
                </div>
-               <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-               <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_xpfalst4.json"  background="transparent" style="height: 410px;" speed="0.6"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
             </div>
 
          </div>
@@ -96,10 +104,13 @@
                <div class="contact-fields">
                   <i class="far fa-envelope-open"></i><input required type="email" name="email">
                </div>
+
                <label>Telefone</label>
                <div class="contact-fields">
-                  <i class="fas fa-mobile-alt"></i><input required type="number" name="celular">
+                  <i class="fas fa-mobile-alt"></i><input required type="text" name="phone">
                </div>
+                <!-- If we receive data in this field submission will be ignored -->
+               <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
 
                <label>Resumo</label>
                <textarea name="message" required id="contact-text-area" cols="1" rows="7"></textarea>
@@ -108,10 +119,10 @@
 
          </div>
       </main>
-
+      <script src="../js/script.js" type="text/javascript"></script>
       <footer id="footer">
          <div>
-            <p>©2020-2021 Agência New Flaps. Todos os direitos reservados</p>
+            <p>New Flaps ©2020 - 2021. Alguns direitos reservados.</p>
          </div>
       </footer>
    </body>

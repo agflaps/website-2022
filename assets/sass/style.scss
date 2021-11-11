@@ -13,12 +13,13 @@
     img {
       display: none;
     }
-    
       height: 85vh !important;
       background: $primary-color;
 
     .mouse-scroll {
-      display: none;
+      width: 100%;
+     position: absolute;
+    margin-top: 73vh;
     }
   }
   @media only screen and (max-width: 1024px) {
@@ -28,7 +29,6 @@
     }
 
     &.full-banner {
-
       background: linear-gradient(
         90deg,
         rgb(78, 4, 175)0%,
@@ -42,8 +42,9 @@
 
 .banner-info {
   position: absolute;
-  top: 25%;
+  top: 23%;
   left: 5%;
+  
 
   #orcamento-btn {
     @include primary-btn;
@@ -78,7 +79,6 @@
     margin-bottom: 2rem;
   }
   margin-top: 5%;
-  padding: 0px 0px 50px;
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -201,29 +201,30 @@
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 9%;
   padding-bottom: 30px;
 }
 .contact-container{
   @media only screen and (max-width: 600px) {
     width: 100%;
+    margin-top: 50px;
+
     lottie-player {
        display: none ;
      } }
-
   margin-left: 0px;
   width: 50rem;
   justify-content: center;
   padding: 20px 20px;
 
+
   h2{
     @media only screen and (max-width: 600px) {
       width: 100%;
       margin-left: 0;
-      margin-top: 15px;
       text-align: justify;
     }
-
+    
     width: 80%;
     margin-left: 10px;
     @include text-paragrapy()

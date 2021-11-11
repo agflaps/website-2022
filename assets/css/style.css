@@ -48,101 +48,122 @@ p {
 }
 
 a {
-  font-family: Quicksand;
+  font-family: Poppins;
   font-style: none;
+  text-decoration: none;
 }
 
-header {
-  padding-top: 10px;
+#btn-mobile {
+  display: none;
+}
+
+#logo {
+  margin-left: 30%;
+}
+@media (max-width: 600px) {
+  #logo {
+    margin-left: -15%;
+  }
+}
+
+#header {
   width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: absolute;
-}
-@media only screen and (max-width: 1024px) {
-  header ul, header #logo {
-    margin-top: 10rem;
-  }
-}
-header #logo {
-  margin-left: 6rem;
-}
-header ul {
-  margin-right: 2rem;
-}
-header #contact-btn {
-  width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
-  font-family: Raleway;
-  height: 45px;
-  border-radius: 30px;
-  border: none;
-  font-size: 17px;
-  cursor: pointer;
-  font-weight: 600;
-  color: #fff;
-  height: 35px;
-  width: 10rem;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  border: solid 2px #fff;
-}
-@media only screen and (max-width: 600px) {
-  header #contact-btn {
-    width: 10rem;
-  }
-}
-header #contact-btn:hover {
-  transition: all 0.4s;
-  background-color: rgba(212, 212, 212, 0.829);
-}
-header #contact-btn:hover {
-  background-color: #fff;
-  color: blueviolet;
-  transition: ease 0.3s;
-}
-@media screen and (max-width: 600px) {
-  header #logo {
-    margin-top: 1px;
-    margin-left: 25px;
-  }
-}
-header .menu-header {
-  position: relative;
-  display: inline-flex;
+  padding: 3rem;
   justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
-  header .menu-header {
-    display: none;
-  }
-}
-header .menu-header li {
-  margin-right: 30px;
-  list-style: none;
-}
-header .menu-header ul,
-header .menu-header a {
-  text-decoration: none;
-  font-style: none;
+#header button {
+  color: #fff;
+  font-size: 19px;
+  background: none;
+  padding: 5px 15px 5px 15px;
+  border-radius: 25px;
+  border: 2px solid #fff;
   font-family: Poppins;
-  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.header-pages {
-  position: relative;
-  background-color: blueviolet;
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.9rem;
 }
-@media only screen and (max-width: 1024px) {
-  .header-pages ul, .header-pages #logo {
-    margin-top: 0rem;
-    margin-left: 2rem;
+
+#menu a {
+  display: block;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  nav #menu {
+    background: #fff;
+    border-radius: 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    top: 70px;
+    right: 10px;
+    height: 0;
+    display: block;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  nav #menu a {
+    color: grey;
+    padding: 2px 0;
+    margin: 5px 0px 15px 20px;
+    border-bottom: 2px solid #e7e7e7;
+  }
+  nav #btn-mobile {
+    display: flex;
+    background: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  nav .hamburger {
+    color: blueviolet;
+    width: 20px;
+    border-top: 2px solid;
+  }
+  nav .hamburger::after, nav .hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.5s;
+    position: relative;
   }
 }
-.header-pages #logo {
-  padding-bottom: 10px;
+
+#nav.active #menu {
+  height: calc(59vh - 70px);
+  visibility: visible;
+  /*overflow-y: auto;*/
+}
+
+#nav.active .hamburger {
+  border-top-color: transparent;
+}
+
+#nav.active .hamburger::before {
+  transform: rotate(135deg);
+}
+
+#nav.active .hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
 }
 
 #footer {
@@ -209,7 +230,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
@@ -245,7 +266,9 @@ header .menu-header a {
     display: none;
   }
   .full-banner .mouse-scroll {
-    display: none;
+    width: 100%;
+    position: absolute;
+    margin-top: 73vh;
   }
 }
 @media only screen and (max-width: 1024px) {
@@ -262,7 +285,7 @@ header .menu-header a {
 
 .banner-info {
   position: absolute;
-  top: 25%;
+  top: 23%;
   left: 5%;
 }
 .banner-info #orcamento-btn {
@@ -272,7 +295,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
@@ -316,7 +339,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
@@ -347,7 +370,6 @@ header .menu-header a {
 
 .container-servicos {
   margin-top: 5%;
-  padding: 0px 0px 50px;
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -422,7 +444,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
@@ -487,7 +509,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
@@ -523,7 +545,7 @@ header .menu-header a {
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 9%;
   padding-bottom: 30px;
 }
 
@@ -536,6 +558,7 @@ header .menu-header a {
 @media only screen and (max-width: 600px) {
   .contact-container {
     width: 100%;
+    margin-top: 50px;
   }
   .contact-container lottie-player {
     display: none;
@@ -554,7 +577,6 @@ header .menu-header a {
   .contact-container h2 {
     width: 100%;
     margin-left: 0;
-    margin-top: 15px;
     text-align: justify;
   }
 }
@@ -685,7 +707,7 @@ header .menu-header a {
   font-family: Raleway;
   height: 45px;
   border-radius: 30px;
-  border: none;
+  border: solid 1px #ffffff75;
   font-size: 17px;
   cursor: pointer;
   font-weight: 600;
