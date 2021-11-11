@@ -117,7 +117,7 @@ a {
     overflow-y: hidden;
   }
   nav #menu a {
-    color: grey;
+    color: #8b8b8b;
     padding: 2px 0;
     margin: 5px 0px 15px 20px;
     border-bottom: 2px solid #e7e7e7;
