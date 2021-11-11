@@ -13,12 +13,21 @@
     img {
       display: none;
     }
+<<<<<<< HEAD
+=======
     
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
       height: 85vh !important;
       background: $primary-color;
 
     .mouse-scroll {
+<<<<<<< HEAD
+      width: 100%;
+     position: absolute;
+    margin-top: 73vh;
+=======
       display: none;
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
     }
   }
   @media only screen and (max-width: 1024px) {
@@ -28,7 +37,10 @@
     }
 
     &.full-banner {
+<<<<<<< HEAD
+=======
 
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
       background: linear-gradient(
         90deg,
         rgb(78, 4, 175)0%,
@@ -42,8 +54,14 @@
 
 .banner-info {
   position: absolute;
+<<<<<<< HEAD
+  top: 23%;
+  left: 5%;
+  
+=======
   top: 25%;
   left: 5%;
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
 
   #orcamento-btn {
     @include primary-btn;
@@ -78,7 +96,10 @@
     margin-bottom: 2rem;
   }
   margin-top: 5%;
+<<<<<<< HEAD
+=======
   padding: 0px 0px 50px;
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -201,29 +222,51 @@
   max-width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
+  padding-top: 9%;
+=======
   padding-top: 30px;
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
   padding-bottom: 30px;
 }
 .contact-container{
   @media only screen and (max-width: 600px) {
     width: 100%;
+<<<<<<< HEAD
+    margin-top: 50px;
+
+    lottie-player {
+       display: none ;
+     } }
+=======
     lottie-player {
        display: none ;
      } }
 
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
   margin-left: 0px;
   width: 50rem;
   justify-content: center;
   padding: 20px 20px;
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
   h2{
     @media only screen and (max-width: 600px) {
       width: 100%;
       margin-left: 0;
+<<<<<<< HEAD
+      text-align: justify;
+    }
+    
+=======
       margin-top: 15px;
       text-align: justify;
     }
 
+>>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
     width: 80%;
     margin-left: 10px;
     @include text-paragrapy()
