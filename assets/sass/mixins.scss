@@ -8,19 +8,12 @@
     font-family: $font-btn;
     height: 45px;
     border-radius: 30px;
-<<<<<<< HEAD
     border:solid 1px #ffffff75;
-=======
-    border:none;
->>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
     font-size: 17px;
     cursor: pointer;
     font-weight: 600;
     color: $wite;
-<<<<<<< HEAD
 
-=======
->>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
     &:hover{
         transition: all 0.4s;
         background-color: rgba(212, 212, 212, 0.829);
@@ -48,40 +41,12 @@
     transition: all 0.4s;
     border: none;
     box-shadow:$box-shadow
-<<<<<<< HEAD
-=======
     }
 
     
 }
 
 
-/*----- FORMATTING TEXT AND LABELS  -----*/
-
-
-@mixin text-paragrapy {
-    @media only screen and (max-width: 600px) {
-        font-size: 17px;
->>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
-    }
-     font-family: $font-paragrapy;
-     color: $grey;
-     font-size: 17px;
-     font-weight: 500;
-     text-align: left;
-
-}
-
-@mixin text-link {
-    text-decoration: none;
-    font-style: none;
-    font-family: $font-paragrapy;
-    color:$wite;
-    
-}
-
-
-<<<<<<< HEAD
 /*----- FORMATTING TEXT AND LABELS  -----*/
 
 
@@ -106,8 +71,6 @@
 }
 
 
-=======
->>>>>>> a74337c48eb8de1f491b15928174da7508c04b1c
 /*----- FORMS  -----*/
 
 @mixin forms {
