@@ -6,8 +6,9 @@
     width: 12rem;
     background-color: rgba(212, 212, 212, 0.342);
     font-family: $font-btn;
+    letter-spacing: 0.8px;
     height: 45px;
-    border-radius: 30px;
+    border-radius: 20px;
     border:solid 1px #ffffff75;
     font-size: 17px;
     cursor: pointer;
@@ -31,13 +32,13 @@
 @mixin secondary-btn{
  
   @include basic-btn();
-   border: #d794fd 1px solid;
-   background: none;
-   color: #7a0aca;
+   border: #edcfff 1px solid;
+   background: #6e31aa linear-gradient(to right, #824bc2, #a652eb);
+   color: $wite;
    
 &:hover{
-    background: #ba04df linear-gradient(to right, #7607c5, #9531e7);
-    color: $background-color;
+    color: #e0d7ff;
+    background: #8e53da5e linear-gradient(to right,#a652eb ,#824bc2);
     transition: all 0.4s;
     border: none;
     box-shadow:$box-shadow

@@ -23,12 +23,25 @@ html {
 	}
 }
 
-h1 {
+h1{ 
 	font-size: 35px;
 	font-weight: 500;
 	font-family: $font-title;
 	color: $grey;
 	margin: 0;
+}
+
+h2{
+	font-size: 20px;
+	padding-bottom: 9px;
+	margin: 0;
+	text-align: left;
+	margin-left: 10px;
+	border-radius: 25px;
+	font-weight: 900;
+	font-family: $font-paragrapy;
+	color: #6e31aa;
+
 }
 
 p {
@@ -41,6 +54,9 @@ a {
 	text-decoration: none;
 }
 
+i{
+	margin-left: 5px;
+}
 
 #btn-mobile{
 display: none;
@@ -67,14 +83,19 @@ justify-content: space-between;
 
 button{
 	color: $wite;
-	font-size: 19px;
+	font-size: 17px;
 	background: none;
 	padding: 5px 15px 5px 15px;
 	border-radius: 25px;
-	border: 2px solid $wite;
+	border: 1.7px solid $wite;
 	font-family: $font-paragrapy;
 	font-weight: bold;
 	cursor: pointer;
+	
+	&:hover{
+		background: $wite;
+        color:#452e81;
+	}
 }
 
 }
@@ -89,7 +110,6 @@ button{
 	display: block;
 	color: $wite;
 	padding: .5rem;
-	font-size: 18px;
 }
 
 
@@ -202,6 +222,7 @@ transform: rotate(135deg);
 		}
 		button {
 			margin-top: -10%;
+			width: 12rem !important;
 		}
 		.title-404 {
 			position: relative;

@@ -17,36 +17,43 @@
 </head>
 
 <body>
-  <header class="header-pages">
-    <a href="/index.html"> <img id="logo" src="../assets/images/logo.png" height="57px" width="120px"></a>
-    <ul class="menu-header">
-       <li>
-          <a  href="/index.html">
-             <h3>Início</h3>
-          </a>
-       </li>
-       <li>
-          <a  href="#about">
-             <h3>Sobre</h3>
-          </a>
-       </li>
-       <li>
-          <a href="#services">
-             <h3>Serviços</h3>
-          </a>
-       </li>
-       <li>
-          <a href="#">
-             <h3>Blog</h3>
-          </a>
-       </li>
-       <li>
-          <a  href="/pages/contact.html" >
-             <h3 id="circle-wite">Contato</h3>
-          </a>
-       </li>
-    </ul>
- </header>
+   <header id="header" style="background-color:#452e81;">
+         
+      <a href="../index.html"> <img id="logo" src="../assets/images/logo.png" height="57px" width="120px"></a>
+      <nav id="nav">
+         <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
+            <span class="hamburger"></span>
+         </button>
+      <ul id="menu">
+         <li>
+            <a  href="../index.html">
+               <h3>Início</h3>
+            </a>
+         </li>
+         <li>
+            <a href="#services">
+               <h3>Serviços</h3>
+            </a>
+         </li>
+         <li>
+            <a  href="#about">
+               <h3>Sobre</h3>
+            </a>
+         </li>
+
+         <li>
+            <a target="_blank" href="https://newflaps.com.br/blog/">
+               <h3>Blog</h3>
+            </a>
+         </li>
+         <li>
+            <a  href="#" >
+               <a href="/pages/contact.html"><button>Contato</button></a>
+            </a>
+         </li>
+      </ul>
+   </nav>
+   </header>
   <main id="_404">
     <section  class="error-404">
 
@@ -64,9 +71,11 @@
 
   <footer id="footer">
    <div>
-      <p>©2020-2021 Agência New Flaps. Todos os direitos reservados</p>
+      <p>©2020-2022 Agência New Flaps. Todos os direitos reservados</p>
    </div>
 </footer>
+
+<script src="./js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

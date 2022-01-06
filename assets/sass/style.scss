@@ -110,14 +110,15 @@
       @include text-paragrapy();
       width: 310px;
     }  
-    button{
-      width: 100% !important;
-    }
+
     .model {
       height: 250px;
     }
     .container {
       width: 100%;
+    }
+    button{
+      width: 90% !important;
     }
   }
 
@@ -133,6 +134,7 @@
   button {
     @include secondary-btn();
     width: 100%;
+
   }
   &:hover {
     transition: all 0.3s;
@@ -147,36 +149,38 @@
 }
 
 .container-about {
-  padding: 20px;
+  padding: 50px;
+  display: flex;
   justify-content: center;
-  p,
-  h1 {
-    text-align: left;
-    color: $wite;
-  }
+  align-items: center;
+  
 }
 .about {
-  div, p{
-    width: 30rem;
+  div,p, h1{
+    width: 600px;
+    color: $wite;
   }
-  background: #ff4f73;
-  background: linear-gradient(
-    150deg,
-    #fdab5d 0%,
-    rgba(255, 100, 79, 0.869) 50%,
-    rgba(253, 110, 110, 0.804) 100%
-  );
+  lottie-player{
+    margin-left: 50px;
+  }
   padding: 50px;
   border-radius: 70px;
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
   align-items: center;
+  max-width:95pc;
+  width: 100%;
+  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+
+
   button {
     @include basic-btn;
+    color: #ffffff ;
   }
   
   @media only screen and (max-width: 600px) {
+    border-radius: 10px;
 
     lottie-player {
       display: none ;
@@ -192,7 +196,6 @@
     }
   }
 }
-
 
 /*--------------- contact page---------------*/
 
@@ -212,6 +215,7 @@
     lottie-player {
        display: none ;
      } }
+     
   margin-left: 0px;
   width: 50rem;
   justify-content: center;
@@ -242,6 +246,7 @@ justify-content: left;
 
 h3{
 padding:7px;
+padding-top: 8px;
 padding-right:  20px;
 border:solid 1px  $purple;
 font-family: $font-paragrapy;
@@ -250,8 +255,21 @@ margin: 5px;
 border-radius: 30px;
 }
 i{
-  color:  $purple;
+  color: $wite;
   padding-left: 10px;
+}
+#whatsapp{
+  background: rgba(69, 202, 76, 0.705);
+  color: $wite;
+  border-color:rgb(21, 158, 21);
+  
+}
+
+#email{
+  background: rgba(69, 149, 202, 0.705);
+  color: $wite;
+  border-color: rgb(37, 90, 187);
+  
 }
 
 }
