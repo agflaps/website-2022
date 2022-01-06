@@ -10,24 +10,9 @@ html {
   height: 100%;
   background-color: #f7f7f7;
 }
-body ::-webkit-scrollbar-track,
-html ::-webkit-scrollbar-track {
-  background-color: transparent !important;
-}
-body ::-webkit-scrollbar,
-html ::-webkit-scrollbar {
-  margin-top: 2% !important;
-  background-color: transparent;
-}
-body ::-webkit-scrollbar-thumb,
-html ::-webkit-scrollbar-thumb {
-  background: #a0a0a0;
-  border-radius: 30px;
-  height: 5% !important;
-}
 
 h1 {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 500;
   font-family: Quicksand;
   color: #8b8b8b;
@@ -35,7 +20,8 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 22px;
+  letter-spacing: 0.8px;
   padding-bottom: 9px;
   margin: 0;
   text-align: left;
@@ -93,19 +79,20 @@ i {
   justify-content: space-between;
 }
 #header button {
-  color: #fff;
+  color: #e6e6e6;
   font-size: 17px;
   background: none;
   padding: 5px 15px 5px 15px;
   border-radius: 25px;
-  border: 1.7px solid #fff;
+  border: 1.7px solid #e7e7e7;
   font-family: Poppins;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.5s;
 }
 #header button:hover {
   background: #fff;
-  color: #452e81;
+  color: blueviolet;
 }
 
 #menu {
@@ -150,7 +137,7 @@ i {
     gap: 0.5rem;
   }
   nav .hamburger {
-    color: blueviolet;
+    color: #6d2baa;
     width: 20px;
     border-top: 2px solid;
   }
@@ -392,13 +379,13 @@ i {
 }
 
 .container-servicos {
-  margin-top: 5%;
+  margin-top: 7%;
   text-align: center;
   justify-content: center;
   width: 100%;
 }
 .container-servicos h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .grid-card-services {
@@ -522,7 +509,10 @@ i {
   width: 100%;
   background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
 }
-.about div, .about p, .about h1 {
+.about h1 {
+  color: #fff;
+}
+.about div, .about p {
   width: 600px;
   color: #fff;
 }
@@ -530,6 +520,7 @@ i {
   margin-left: 50px;
 }
 .about button {
+  background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
   background-color: rgba(212, 212, 212, 0.342);
   font-family: Raleway;
@@ -541,6 +532,8 @@ i {
   cursor: pointer;
   font-weight: 600;
   color: #fff;
+  box-shadow: 0 1px 8px #f894658f;
+  border: none;
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
@@ -554,7 +547,7 @@ i {
 }
 @media only screen and (max-width: 600px) {
   .about {
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .about lottie-player {
     display: none;
@@ -564,9 +557,6 @@ i {
   }
   .about .about-right img {
     display: none;
-  }
-  .about button {
-    margin-left: 20px;
   }
 }
 
@@ -630,9 +620,9 @@ i {
   padding: 7px;
   padding-top: 8px;
   padding-right: 20px;
-  border: solid 1px blueviolet;
+  border: solid 1px #6d2baa;
   font-family: Poppins;
-  color: blueviolet;
+  color: #6d2baa;
   margin: 5px;
   border-radius: 30px;
 }
@@ -641,12 +631,12 @@ i {
   padding-left: 10px;
 }
 .contact-info #whatsapp {
-  background: rgba(69, 202, 76, 0.705);
+  background: rgba(44, 179, 51, 0.705);
   color: #fff;
   border-color: #159e15;
 }
 .contact-info #email {
-  background: rgba(69, 149, 202, 0.705);
+  background: rgba(21, 80, 207, 0.63);
   color: #fff;
   border-color: #255abb;
 }

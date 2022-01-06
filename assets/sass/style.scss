@@ -76,9 +76,9 @@
 
 .container-servicos {
   h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
-  margin-top: 5%;
+  margin-top: 7%;
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -156,7 +156,10 @@
   
 }
 .about {
-  div,p, h1{
+  h1{
+    color: $wite;
+  }
+  div,p{
     width: 600px;
     color: $wite;
   }
@@ -175,12 +178,12 @@
 
 
   button {
-    @include basic-btn;
+    @include primary-btn;
     color: #ffffff ;
   }
   
   @media only screen and (max-width: 600px) {
-    border-radius: 10px;
+    border-radius: 5px;
 
     lottie-player {
       display: none ;
@@ -191,11 +194,9 @@
     .about-right img {
       display: none;
     }
-    button {
-      margin-left: 20px;
-    }
   }
 }
+
 
 /*--------------- contact page---------------*/
 
@@ -259,14 +260,14 @@ i{
   padding-left: 10px;
 }
 #whatsapp{
-  background: rgba(69, 202, 76, 0.705);
+  background: rgba(44, 179, 51, 0.705);
   color: $wite;
   border-color:rgb(21, 158, 21);
   
 }
 
 #email{
-  background: rgba(69, 149, 202, 0.705);
+  background: rgba(21, 80, 207, 0.63);
   color: $wite;
   border-color: rgb(37, 90, 187);
   
