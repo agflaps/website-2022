@@ -48,6 +48,7 @@
 
   #orcamento-btn {
     @include primary-btn;
+    color: $wite;
     animation: pulse 3s infinite;
     @-webkit-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
     @-moz-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
@@ -57,6 +58,7 @@
   #portfolio-btn {
     @include basic-btn;
     margin-left: 15px;
+    color: $wite;
   }
   
   h1 {
@@ -286,4 +288,40 @@ i{
     @include forms();
    }
 
+}
+
+//-------- portifólio area ------//
+
+.container-portifolio{
+  button{
+    margin: 2px;
+    margin-bottom: 30px;
+    @include basic-btn();
+    font-size:15px;
+    
+  }
+
+  justify-content: center;
+  text-align: center;
+
+}
+
+.container-card{
+  padding-bottom: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card-portifolio img{
+    left: 520px;
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    margin: 5px;
+    width: 360px;
+  }
+
+  .line-portifolio{
+    display: flex;
+  }
 }

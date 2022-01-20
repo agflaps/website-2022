@@ -15,7 +15,7 @@ h1 {
   font-size: 40px;
   font-weight: 500;
   font-family: Quicksand;
-  color: #8b8b8b;
+  color: #929292;
   margin: 0;
 }
 
@@ -34,7 +34,7 @@ h2 {
 
 p {
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -179,7 +179,7 @@ i {
 }
 #footer p {
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -233,7 +233,7 @@ i {
 }
 .error-404 button {
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -243,7 +243,7 @@ i {
   cursor: pointer;
   font-weight: 600;
   color: #fff;
-  background-color: #8b8b8b;
+  background-color: #929292;
 }
 @media only screen and (max-width: 600px) {
   .error-404 button {
@@ -299,7 +299,7 @@ i {
 .banner-info #orcamento-btn {
   background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -311,6 +311,7 @@ i {
   color: #fff;
   box-shadow: 0 1px 8px #f894658f;
   border: none;
+  color: #fff;
   animation: pulse 3s infinite;
 }
 @media only screen and (max-width: 600px) {
@@ -344,7 +345,7 @@ i {
 }
 .banner-info #portfolio-btn {
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -355,6 +356,7 @@ i {
   font-weight: 600;
   color: #fff;
   margin-left: 15px;
+  color: #fff;
 }
 @media only screen and (max-width: 600px) {
   .banner-info #portfolio-btn {
@@ -421,7 +423,7 @@ i {
   }
   .card-servico p {
     font-family: Poppins;
-    color: #8b8b8b;
+    color: #929292;
     font-size: 17px;
     font-weight: 500;
     text-align: left;
@@ -450,7 +452,7 @@ i {
 }
 .card-servico button {
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -522,7 +524,7 @@ i {
 .about button {
   background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -589,7 +591,7 @@ i {
   width: 80%;
   margin-left: 10px;
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -660,7 +662,7 @@ i {
   text-align: left;
   box-shadow: 2px 6px 7px #e7e7e7;
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -683,7 +685,7 @@ i {
   align-items: center;
 }
 .form-container form input {
-  color: #8b8b8b;
+  color: #929292;
   padding-left: 10px;
   font-size: 16px;
   height: 45px;
@@ -697,7 +699,7 @@ i {
   background-color: #f0f0f0;
   cursor: pointer;
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -713,7 +715,7 @@ i {
 }
 .form-container form textarea {
   font-family: Poppins;
-  color: #8b8b8b;
+  color: #929292;
   font-size: 17px;
   font-weight: 500;
   text-align: left;
@@ -735,7 +737,7 @@ i {
 .form-container form button {
   background: #ff7b00 linear-gradient(to right, #ff7b00, #f5bc00);
   width: 12rem;
-  background-color: rgba(212, 212, 212, 0.342);
+  background-color: rgba(139, 139, 139, 0.342);
   font-family: Raleway;
   letter-spacing: 0.8px;
   height: 45px;
@@ -758,6 +760,54 @@ i {
 .form-container form button:hover {
   transition: all 0.4s;
   background-color: rgba(212, 212, 212, 0.829);
+}
+
+.container-portifolio {
+  justify-content: center;
+  text-align: center;
+}
+.container-portifolio button {
+  margin: 2px;
+  margin-bottom: 30px;
+  width: 12rem;
+  background-color: rgba(139, 139, 139, 0.342);
+  font-family: Raleway;
+  letter-spacing: 0.8px;
+  height: 45px;
+  border-radius: 20px;
+  border: solid 1px #ffffff75;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .container-portifolio button {
+    width: 10rem;
+  }
+}
+.container-portifolio button:hover {
+  transition: all 0.4s;
+  background-color: rgba(212, 212, 212, 0.829);
+}
+
+.container-card {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-card .card-portifolio img {
+  left: 520px;
+  border-radius: 20px;
+  box-shadow: 2px 6px 7px #e7e7e7;
+  margin: 5px;
+  width: 360px;
+}
+.container-card .line-portifolio {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
