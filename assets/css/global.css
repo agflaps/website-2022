@@ -55,39 +55,7 @@ header ul {
   margin-right: 2rem;
 }
 
-header #contact-btn {
-  width: 12rem;
-  font-family: Quicksand;
-  height: 45px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  border: solid 1px #7c7979;
-  color: #7c7979;
-  height: 35px;
-  width: 10rem;
-  background-color: transparent;
-  border: none;
-  color: #fff;
-  border: solid 2px #fff;
-}
 
-@media only screen and (max-width: 600px) {
-  header #contact-btn {
-    width: 10rem;
-  }
-}
-
-header #contact-btn:hover {
-  background-color: #dbdbdb;
-  transition: all 0.4s;
-}
-
-header #contact-btn:hover {
-  background-color: #fff;
-  color: blueviolet;
-  transition: ease 0.3s;
-}
 
 @media screen and (max-width: 600px) {
   header #logo {

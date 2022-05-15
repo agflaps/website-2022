@@ -1,13 +1,17 @@
 @import "global.scss";
 
-.full-banner {
-  width: 100%;
+.full-banner{
+  
+  img{
+    width: 100%;
+  }
   flex-wrap: wrap;
   .mouse-scroll {
     align-items: center;
     justify-content: center;
     display: flex;
     margin-top: -13%;
+
   }
   @media only screen and (max-width: 600px) {
     img {
@@ -48,7 +52,6 @@
 
   #orcamento-btn {
     @include primary-btn;
-    color: $wite;
     animation: pulse 3s infinite;
     @-webkit-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
     @-moz-keyframes pulse {to {box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);}}
@@ -58,11 +61,10 @@
   #portfolio-btn {
     @include basic-btn;
     margin-left: 15px;
-    color: $wite;
   }
   
   h1 {
-    font-size: 4rem;
+    font-size: 4.3rem;
     color: $wite;
     font-weight: 300;
     padding-bottom: 3rem;
@@ -78,9 +80,9 @@
 
 .container-servicos {
   h1 {
-    margin-bottom: 2.5rem;
+    margin-top: 10%;
+    margin-bottom: 2%;
   }
-  margin-top: 7%;
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -121,6 +123,8 @@
     }
     button{
       width: 90% !important;
+
+      
     }
   }
 
@@ -136,6 +140,8 @@
   button {
     @include secondary-btn();
     width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
 
   }
   &:hover {
@@ -162,7 +168,7 @@
     color: $wite;
   }
   div,p{
-    width: 600px;
+    width: 500px;
     color: $wite;
   }
   lottie-player{
@@ -176,7 +182,7 @@
   align-items: center;
   max-width:95pc;
   width: 100%;
-  background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+  background: #6e28ca ;
 
 
   button {
@@ -218,9 +224,8 @@
     lottie-player {
        display: none ;
      } }
-     
   margin-left: 0px;
-  width: 50rem;
+  width: 47rem;
   justify-content: center;
   padding: 20px 20px;
 
@@ -290,38 +295,3 @@ i{
 
 }
 
-//-------- portifólio area ------//
-
-.container-portifolio{
-  button{
-    margin: 2px;
-    margin-bottom: 30px;
-    @include basic-btn();
-    font-size:15px;
-    
-  }
-
-  justify-content: center;
-  text-align: center;
-
-}
-
-.container-card{
-  padding-bottom: 20px;
-  padding-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .card-portifolio img{
-    left: 520px;
-    border-radius: 20px;
-    box-shadow: $box-shadow;
-    margin: 5px;
-    width: 360px;
-  }
-
-  .line-portifolio{
-    display: flex;
-  }
-}

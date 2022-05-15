@@ -3,12 +3,12 @@
         width: 10rem;
     }
     
-    width: 12rem;
+    width: 11rem;
+    height: 42px;
     background-color: rgba(139, 139, 139, 0.342);
     font-family: $font-btn;
     letter-spacing: 0.8px;
-    height: 45px;
-    border-radius: 20px;
+    border-radius: 13px;
     border:solid 1px #ffffff75;
     font-size: 17px;
     cursor: pointer;
@@ -33,12 +33,12 @@
  
   @include basic-btn();
    border: #edcfff 1px solid;
-   background: #6e31aa linear-gradient(to right, #824bc2, #a652eb);
+   background: #644ff0 linear-gradient(to right, #644ff0, #6e28ca);
    color: $wite;
    
 &:hover{
     color: #e0d7ff;
-    background: #8e53da5e linear-gradient(to right,#a652eb ,#824bc2);
+    background: #8e53da5e linear-gradient(to right,#6e28ca ,#644ff0);
     transition: all 0.4s;
     border: none;
     box-shadow:$box-shadow
