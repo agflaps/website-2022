@@ -80,7 +80,7 @@
 
 .container-servicos {
   h1 {
-    margin-top: 10%;
+    margin-top: 11%;
     margin-bottom: 2%;
   }
   text-align: center;
@@ -151,7 +151,35 @@
   .model {
     height: 250px;
     max-height: 100%;
-    max-width: 100%;
+    max-width: 98%;
+  }
+
+}
+.container-clients{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  max-width: 100%;
+  padding: 20px;
+h1{
+  text-align: center;
+  margin-top: 5%;
+  
+}
+ img{
+    height: 150px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    img {
+      height: 70px;
+    }
   }
 
 }
@@ -175,14 +203,14 @@
     margin-left: 50px;
   }
   padding: 50px;
-  border-radius: 70px;
+  border-radius: 40px;
   flex-wrap: wrap;
   justify-content: center;
   display: flex;
   align-items: center;
   max-width:95pc;
   width: 100%;
-  background: #6e28ca ;
+  background: #5b1faa ;
 
 
   button {
@@ -225,7 +253,7 @@
        display: none ;
      } }
   margin-left: 0px;
-  width: 47rem;
+  width: 45rem;
   justify-content: center;
   padding: 20px 20px;
 
@@ -247,37 +275,21 @@
   }
 }
 .contact-info {
-display: inline-flex;
+display: grid;
 font-size: 14px;
 flex-wrap: wrap;
 justify-content: left;
 
-h3{
-padding:7px;
-padding-top: 8px;
-padding-right:  20px;
-border:solid 1px  $purple;
-font-family: $font-paragrapy;
-color:  $purple;
-margin: 5px;
-border-radius: 30px;
+button{
+@include secondary-btn();
+margin:2px;
 }
 i{
   color: $wite;
-  padding-left: 10px;
-}
-#whatsapp{
-  background: rgba(44, 179, 51, 0.705);
-  color: $wite;
-  border-color:rgb(21, 158, 21);
-  
 }
 
-#email{
-  background: rgba(21, 80, 207, 0.63);
-  color: $wite;
-  border-color: rgb(37, 90, 187);
-  
+h1,p{
+  max-width: 36rem;
 }
 
 }

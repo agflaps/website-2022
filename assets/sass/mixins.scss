@@ -8,9 +8,9 @@
     background-color: rgba(139, 139, 139, 0.342);
     font-family: $font-btn;
     letter-spacing: 0.8px;
-    border-radius: 13px;
+    border-radius: 11px;
     border:solid 1px #ffffff75;
-    font-size: 17px;
+    font-size: 16px;
     cursor: pointer;
     font-weight: 600;
     color: $wite;
@@ -32,12 +32,11 @@
 @mixin secondary-btn{
  
   @include basic-btn();
-   border: #edcfff 1px solid;
-   background: #644ff0 linear-gradient(to right, #644ff0, #6e28ca);
+   border: #4a37c7  1.5px solid;
+   background: #4716bbab ;
    color: $wite;
    
 &:hover{
-    color: #e0d7ff;
     background: #8e53da5e linear-gradient(to right,#6e28ca ,#644ff0);
     transition: all 0.4s;
     border: none;
@@ -76,7 +75,7 @@
 
 @mixin forms {
     display: grid;
-    border-radius: 25px;
+    border-radius: 20px;
     background-color: $wite;
     height: 92%;
     padding: 30px;
@@ -91,7 +90,8 @@
 
     div {
         background-color: none;
-        border: solid 1px #bdbdbd;
+        border: solid 1.5px #bdbdbd;
+        height: 47px;
         border-radius: 7px;
         padding-left: 20px;
         margin-bottom: 15px;
